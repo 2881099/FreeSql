@@ -1,0 +1,759 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IDbFirst
+   | FreeSql API Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IDbFirst
+   | FreeSql API Docs ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src=".././images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="FreeSql.IDbFirst">
+  
+  
+  <h1 id="FreeSql_IDbFirst" data-uid="FreeSql.IDbFirst" class="text-break">Interface IDbFirst
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="FreeSql.html">FreeSql</a></h6>
+  <h6><strong>Assembly</strong>: FreeSql.dll</h6>
+  <h5 id="FreeSql_IDbFirst_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IDbFirst</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_IDbFirst_ExistsTable_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20FreeSql.IDbFirst.ExistsTable(System.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/Interface/IDbFirst.cs/#L36">View Source</a>
+  </span>
+  <a id="FreeSql_IDbFirst_ExistsTable_" data-uid="FreeSql.IDbFirst.ExistsTable*"></a>
+  <h4 id="FreeSql_IDbFirst_ExistsTable_System_String_System_Boolean_" data-uid="FreeSql.IDbFirst.ExistsTable(System.String,System.Boolean)">ExistsTable(String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>判断表是否存在</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool ExistsTable(string name, bool ignoreCase = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>表名，如：dbo.table1</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">ignoreCase</span></td>
+        <td><p>是否忽略大小写</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_IDbFirst_GetCsConvert_FreeSql_DatabaseModel_DbColumnInfo_.md&amp;value=---%0Auid%3A%20FreeSql.IDbFirst.GetCsConvert(FreeSql.DatabaseModel.DbColumnInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/Interface/IDbFirst.cs/#L50">View Source</a>
+  </span>
+  <a id="FreeSql_IDbFirst_GetCsConvert_" data-uid="FreeSql.IDbFirst.GetCsConvert*"></a>
+  <h4 id="FreeSql_IDbFirst_GetCsConvert_FreeSql_DatabaseModel_DbColumnInfo_" data-uid="FreeSql.IDbFirst.GetCsConvert(FreeSql.DatabaseModel.DbColumnInfo)">GetCsConvert(DbColumnInfo)</h4>
+  <div class="markdown level1 summary"><p>获取c#转换，(int)、(long)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetCsConvert(DbColumnInfo column)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FreeSql.DatabaseModel.DbColumnInfo.html">DbColumnInfo</a></td>
+        <td><span class="parametername">column</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_IDbFirst_GetCsParse_FreeSql_DatabaseModel_DbColumnInfo_.md&amp;value=---%0Auid%3A%20FreeSql.IDbFirst.GetCsParse(FreeSql.DatabaseModel.DbColumnInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/Interface/IDbFirst.cs/#L86">View Source</a>
+  </span>
+  <a id="FreeSql_IDbFirst_GetCsParse_" data-uid="FreeSql.IDbFirst.GetCsParse*"></a>
+  <h4 id="FreeSql_IDbFirst_GetCsParse_FreeSql_DatabaseModel_DbColumnInfo_" data-uid="FreeSql.IDbFirst.GetCsParse(FreeSql.DatabaseModel.DbColumnInfo)">GetCsParse(DbColumnInfo)</h4>
+  <div class="markdown level1 summary"><p>反序列化</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetCsParse(DbColumnInfo column)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FreeSql.DatabaseModel.DbColumnInfo.html">DbColumnInfo</a></td>
+        <td><span class="parametername">column</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_IDbFirst_GetCsStringify_FreeSql_DatabaseModel_DbColumnInfo_.md&amp;value=---%0Auid%3A%20FreeSql.IDbFirst.GetCsStringify(FreeSql.DatabaseModel.DbColumnInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/Interface/IDbFirst.cs/#L80">View Source</a>
+  </span>
+  <a id="FreeSql_IDbFirst_GetCsStringify_" data-uid="FreeSql.IDbFirst.GetCsStringify*"></a>
+  <h4 id="FreeSql_IDbFirst_GetCsStringify_FreeSql_DatabaseModel_DbColumnInfo_" data-uid="FreeSql.IDbFirst.GetCsStringify(FreeSql.DatabaseModel.DbColumnInfo)">GetCsStringify(DbColumnInfo)</h4>
+  <div class="markdown level1 summary"><p>序列化</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetCsStringify(DbColumnInfo column)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FreeSql.DatabaseModel.DbColumnInfo.html">DbColumnInfo</a></td>
+        <td><span class="parametername">column</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_IDbFirst_GetCsType_FreeSql_DatabaseModel_DbColumnInfo_.md&amp;value=---%0Auid%3A%20FreeSql.IDbFirst.GetCsType(FreeSql.DatabaseModel.DbColumnInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/Interface/IDbFirst.cs/#L62">View Source</a>
+  </span>
+  <a id="FreeSql_IDbFirst_GetCsType_" data-uid="FreeSql.IDbFirst.GetCsType*"></a>
+  <h4 id="FreeSql_IDbFirst_GetCsType_FreeSql_DatabaseModel_DbColumnInfo_" data-uid="FreeSql.IDbFirst.GetCsType(FreeSql.DatabaseModel.DbColumnInfo)">GetCsType(DbColumnInfo)</h4>
+  <div class="markdown level1 summary"><p>获取c#类型，int、long</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetCsType(DbColumnInfo column)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FreeSql.DatabaseModel.DbColumnInfo.html">DbColumnInfo</a></td>
+        <td><span class="parametername">column</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_IDbFirst_GetCsTypeInfo_FreeSql_DatabaseModel_DbColumnInfo_.md&amp;value=---%0Auid%3A%20FreeSql.IDbFirst.GetCsTypeInfo(FreeSql.DatabaseModel.DbColumnInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/Interface/IDbFirst.cs/#L68">View Source</a>
+  </span>
+  <a id="FreeSql_IDbFirst_GetCsTypeInfo_" data-uid="FreeSql.IDbFirst.GetCsTypeInfo*"></a>
+  <h4 id="FreeSql_IDbFirst_GetCsTypeInfo_FreeSql_DatabaseModel_DbColumnInfo_" data-uid="FreeSql.IDbFirst.GetCsTypeInfo(FreeSql.DatabaseModel.DbColumnInfo)">GetCsTypeInfo(DbColumnInfo)</h4>
+  <div class="markdown level1 summary"><p>获取c#类型对象</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Type GetCsTypeInfo(DbColumnInfo column)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FreeSql.DatabaseModel.DbColumnInfo.html">DbColumnInfo</a></td>
+        <td><span class="parametername">column</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_IDbFirst_GetCsTypeValue_FreeSql_DatabaseModel_DbColumnInfo_.md&amp;value=---%0Auid%3A%20FreeSql.IDbFirst.GetCsTypeValue(FreeSql.DatabaseModel.DbColumnInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/Interface/IDbFirst.cs/#L56">View Source</a>
+  </span>
+  <a id="FreeSql_IDbFirst_GetCsTypeValue_" data-uid="FreeSql.IDbFirst.GetCsTypeValue*"></a>
+  <h4 id="FreeSql_IDbFirst_GetCsTypeValue_FreeSql_DatabaseModel_DbColumnInfo_" data-uid="FreeSql.IDbFirst.GetCsTypeValue(FreeSql.DatabaseModel.DbColumnInfo)">GetCsTypeValue(DbColumnInfo)</h4>
+  <div class="markdown level1 summary"><p>获取c#值</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetCsTypeValue(DbColumnInfo column)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FreeSql.DatabaseModel.DbColumnInfo.html">DbColumnInfo</a></td>
+        <td><span class="parametername">column</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_IDbFirst_GetDatabases.md&amp;value=---%0Auid%3A%20FreeSql.IDbFirst.GetDatabases%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/Interface/IDbFirst.cs/#L14">View Source</a>
+  </span>
+  <a id="FreeSql_IDbFirst_GetDatabases_" data-uid="FreeSql.IDbFirst.GetDatabases*"></a>
+  <h4 id="FreeSql_IDbFirst_GetDatabases" data-uid="FreeSql.IDbFirst.GetDatabases">GetDatabases()</h4>
+  <div class="markdown level1 summary"><p>获取所有数据库</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;string&gt; GetDatabases()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_IDbFirst_GetDataReaderMethod_FreeSql_DatabaseModel_DbColumnInfo_.md&amp;value=---%0Auid%3A%20FreeSql.IDbFirst.GetDataReaderMethod(FreeSql.DatabaseModel.DbColumnInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/Interface/IDbFirst.cs/#L74">View Source</a>
+  </span>
+  <a id="FreeSql_IDbFirst_GetDataReaderMethod_" data-uid="FreeSql.IDbFirst.GetDataReaderMethod*"></a>
+  <h4 id="FreeSql_IDbFirst_GetDataReaderMethod_FreeSql_DatabaseModel_DbColumnInfo_" data-uid="FreeSql.IDbFirst.GetDataReaderMethod(FreeSql.DatabaseModel.DbColumnInfo)">GetDataReaderMethod(DbColumnInfo)</h4>
+  <div class="markdown level1 summary"><p>获取ado.net读取方法, GetBoolean、GetInt64</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetDataReaderMethod(DbColumnInfo column)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FreeSql.DatabaseModel.DbColumnInfo.html">DbColumnInfo</a></td>
+        <td><span class="parametername">column</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_IDbFirst_GetDbType_FreeSql_DatabaseModel_DbColumnInfo_.md&amp;value=---%0Auid%3A%20FreeSql.IDbFirst.GetDbType(FreeSql.DatabaseModel.DbColumnInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/Interface/IDbFirst.cs/#L43">View Source</a>
+  </span>
+  <a id="FreeSql_IDbFirst_GetDbType_" data-uid="FreeSql.IDbFirst.GetDbType*"></a>
+  <h4 id="FreeSql_IDbFirst_GetDbType_FreeSql_DatabaseModel_DbColumnInfo_" data-uid="FreeSql.IDbFirst.GetDbType(FreeSql.DatabaseModel.DbColumnInfo)">GetDbType(DbColumnInfo)</h4>
+  <div class="markdown level1 summary"><p>获取数据库枚举类型int值</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int GetDbType(DbColumnInfo column)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FreeSql.DatabaseModel.DbColumnInfo.html">DbColumnInfo</a></td>
+        <td><span class="parametername">column</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_IDbFirst_GetEnumsByDatabase_System_String___.md&amp;value=---%0Auid%3A%20FreeSql.IDbFirst.GetEnumsByDatabase(System.String%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/Interface/IDbFirst.cs/#L93">View Source</a>
+  </span>
+  <a id="FreeSql_IDbFirst_GetEnumsByDatabase_" data-uid="FreeSql.IDbFirst.GetEnumsByDatabase*"></a>
+  <h4 id="FreeSql_IDbFirst_GetEnumsByDatabase_System_String___" data-uid="FreeSql.IDbFirst.GetEnumsByDatabase(System.String[])">GetEnumsByDatabase(String[])</h4>
+  <div class="markdown level1 summary"><p>获取数据库枚举类型，适用 PostgreSQL</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;DbEnumInfo&gt; GetEnumsByDatabase(params string[] database)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">database</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="FreeSql.DatabaseModel.DbEnumInfo.html">DbEnumInfo</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_IDbFirst_GetTableByName_System_String_System_Boolean_.md&amp;value=---%0Auid%3A%20FreeSql.IDbFirst.GetTableByName(System.String%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/Interface/IDbFirst.cs/#L28">View Source</a>
+  </span>
+  <a id="FreeSql_IDbFirst_GetTableByName_" data-uid="FreeSql.IDbFirst.GetTableByName*"></a>
+  <h4 id="FreeSql_IDbFirst_GetTableByName_System_String_System_Boolean_" data-uid="FreeSql.IDbFirst.GetTableByName(System.String,System.Boolean)">GetTableByName(String, Boolean)</h4>
+  <div class="markdown level1 summary"><p>获取指定单表信息，包括列详情、主键、唯一键、索引、备注</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DbTableInfo GetTableByName(string name, bool ignoreCase = true)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>表名，如：dbo.table1</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">ignoreCase</span></td>
+        <td><p>是否忽略大小写</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FreeSql.DatabaseModel.DbTableInfo.html">DbTableInfo</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_IDbFirst_GetTablesByDatabase_System_String___.md&amp;value=---%0Auid%3A%20FreeSql.IDbFirst.GetTablesByDatabase(System.String%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/Interface/IDbFirst.cs/#L20">View Source</a>
+  </span>
+  <a id="FreeSql_IDbFirst_GetTablesByDatabase_" data-uid="FreeSql.IDbFirst.GetTablesByDatabase*"></a>
+  <h4 id="FreeSql_IDbFirst_GetTablesByDatabase_System_String___" data-uid="FreeSql.IDbFirst.GetTablesByDatabase(System.String[])">GetTablesByDatabase(String[])</h4>
+  <div class="markdown level1 summary"><p>获取指定数据库的表信息，包括表、列详情、主键、唯一键、索引、外键、备注</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">List&lt;DbTableInfo&gt; GetTablesByDatabase(params string[] database)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">database</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<a class="xref" href="FreeSql.DatabaseModel.DbTableInfo.html">DbTableInfo</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_IDbFirst.md&amp;value=---%0Auid%3A%20FreeSql.IDbFirst%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/Interface/IDbFirst.cs/#L7" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

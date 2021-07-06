@@ -1,0 +1,661 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class BaseRepository&lt;TEntity, TKey&gt;
+   | FreeSql API Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class BaseRepository&lt;TEntity, TKey&gt;
+   | FreeSql API Docs ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../.././images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="FreeSql.BaseRepository`2">
+  
+  
+  <h1 id="FreeSql_BaseRepository_2" data-uid="FreeSql.BaseRepository`2" class="text-break">Class BaseRepository&lt;TEntity, TKey&gt;
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="FreeSql.BaseRepository-1.html">BaseRepository</a>&lt;TEntity&gt;</div>
+    <div class="level2"><span class="xref">BaseRepository&lt;TEntity, TKey&gt;</span></div>
+      <div class="level3"><a class="xref" href="FreeSql.DefaultRepository-2.html">DefaultRepository&lt;TEntity, TKey&gt;</a></div>
+      <div class="level3"><a class="xref" href="FreeSql.GuidRepository-1.html">GuidRepository&lt;TEntity&gt;</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="FreeSql.IBaseRepository-2.html">IBaseRepository</a>&lt;TEntity, TKey&gt;</div>
+    <div><a class="xref" href="FreeSql.IBaseRepository-1.html">IBaseRepository</a>&lt;TEntity&gt;</div>
+    <div><a class="xref" href="FreeSql.IBaseRepository.html">IBaseRepository</a></div>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="FreeSql.BaseRepository-1.html#FreeSql_BaseRepository_1_DataFilter">BaseRepository&lt;TEntity&gt;.DataFilter</a>
+    </div>
+    <div>
+      <a class="xref" href="FreeSql.BaseRepository-1.html#FreeSql_BaseRepository_1_ApplyDataFilter_System_String_System_Linq_Expressions_Expression_System_Func__0_System_Boolean___">BaseRepository&lt;TEntity&gt;.ApplyDataFilter(String, Expression&lt;Func&lt;TEntity, Boolean&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="FreeSql.BaseRepository-1.html#FreeSql_BaseRepository_1_Dispose">BaseRepository&lt;TEntity&gt;.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="FreeSql.BaseRepository-1.html#FreeSql_BaseRepository_1_EntityType">BaseRepository&lt;TEntity&gt;.EntityType</a>
+    </div>
+    <div>
+      <a class="xref" href="FreeSql.BaseRepository-1.html#FreeSql_BaseRepository_1_AsType_System_Type_">BaseRepository&lt;TEntity&gt;.AsType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="FreeSql.BaseRepository-1.html#FreeSql_BaseRepository_1_AsTable_System_Func_System_String_System_String__">BaseRepository&lt;TEntity&gt;.AsTable(Func&lt;String, String&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="FreeSql.BaseRepository-1.html#FreeSql_BaseRepository_1_DbContextOptions">BaseRepository&lt;TEntity&gt;.DbContextOptions</a>
+    </div>
+    <div>
+      <a class="xref" href="FreeSql.BaseRepository-1.html#FreeSql_BaseRepository_1_Orm">BaseRepository&lt;TEntity&gt;.Orm</a>
+    </div>
+    <div>
+      <a class="xref" href="FreeSql.BaseRepository-1.html#FreeSql_BaseRepository_1_UnitOfWork">BaseRepository&lt;TEntity&gt;.UnitOfWork</a>
+    </div>
+    <div>
+      <a class="xref" href="FreeSql.BaseRepository-1.html#FreeSql_BaseRepository_1_UpdateDiy">BaseRepository&lt;TEntity&gt;.UpdateDiy</a>
+    </div>
+    <div>
+      <a class="xref" href="FreeSql.BaseRepository-1.html#FreeSql_BaseRepository_1_Select">BaseRepository&lt;TEntity&gt;.Select</a>
+    </div>
+    <div>
+      <a class="xref" href="FreeSql.BaseRepository-1.html#FreeSql_BaseRepository_1_Where_System_Linq_Expressions_Expression_System_Func__0_System_Boolean___">BaseRepository&lt;TEntity&gt;.Where(Expression&lt;Func&lt;TEntity, Boolean&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="FreeSql.BaseRepository-1.html#FreeSql_BaseRepository_1_WhereIf_System_Boolean_System_Linq_Expressions_Expression_System_Func__0_System_Boolean___">BaseRepository&lt;TEntity&gt;.WhereIf(Boolean, Expression&lt;Func&lt;TEntity, Boolean&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="FreeSql.BaseRepository-1.html#FreeSql_BaseRepository_1_Delete_System_Linq_Expressions_Expression_System_Func__0_System_Boolean___">BaseRepository&lt;TEntity&gt;.Delete(Expression&lt;Func&lt;TEntity, Boolean&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="FreeSql.BaseRepository-1.html#FreeSql_BaseRepository_1_Delete__0_">BaseRepository&lt;TEntity&gt;.Delete(TEntity)</a>
+    </div>
+    <div>
+      <a class="xref" href="FreeSql.BaseRepository-1.html#FreeSql_BaseRepository_1_Delete_System_Collections_Generic_IEnumerable__0__">BaseRepository&lt;TEntity&gt;.Delete(IEnumerable&lt;TEntity&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="FreeSql.BaseRepository-1.html#FreeSql_BaseRepository_1_Insert__0_">BaseRepository&lt;TEntity&gt;.Insert(TEntity)</a>
+    </div>
+    <div>
+      <a class="xref" href="FreeSql.BaseRepository-1.html#FreeSql_BaseRepository_1_Insert_System_Collections_Generic_IEnumerable__0__">BaseRepository&lt;TEntity&gt;.Insert(IEnumerable&lt;TEntity&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="FreeSql.BaseRepository-1.html#FreeSql_BaseRepository_1_Update__0_">BaseRepository&lt;TEntity&gt;.Update(TEntity)</a>
+    </div>
+    <div>
+      <a class="xref" href="FreeSql.BaseRepository-1.html#FreeSql_BaseRepository_1_Update_System_Collections_Generic_IEnumerable__0__">BaseRepository&lt;TEntity&gt;.Update(IEnumerable&lt;TEntity&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="FreeSql.BaseRepository-1.html#FreeSql_BaseRepository_1_Attach__0_">BaseRepository&lt;TEntity&gt;.Attach(TEntity)</a>
+    </div>
+    <div>
+      <a class="xref" href="FreeSql.BaseRepository-1.html#FreeSql_BaseRepository_1_Attach_System_Collections_Generic_IEnumerable__0__">BaseRepository&lt;TEntity&gt;.Attach(IEnumerable&lt;TEntity&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="FreeSql.BaseRepository-1.html#FreeSql_BaseRepository_1_AttachOnlyPrimary__0_">BaseRepository&lt;TEntity&gt;.AttachOnlyPrimary(TEntity)</a>
+    </div>
+    <div>
+      <a class="xref" href="FreeSql.BaseRepository-1.html#FreeSql_BaseRepository_1_FlushState">BaseRepository&lt;TEntity&gt;.FlushState()</a>
+    </div>
+    <div>
+      <a class="xref" href="FreeSql.BaseRepository-1.html#FreeSql_BaseRepository_1_InsertOrUpdate__0_">BaseRepository&lt;TEntity&gt;.InsertOrUpdate(TEntity)</a>
+    </div>
+    <div>
+      <a class="xref" href="FreeSql.BaseRepository-1.html#FreeSql_BaseRepository_1_SaveMany__0_System_String_">BaseRepository&lt;TEntity&gt;.SaveMany(TEntity, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="FreeSql.BaseRepository-1.html#FreeSql_BaseRepository_1_BeginEdit_System_Collections_Generic_List__0__">BaseRepository&lt;TEntity&gt;.BeginEdit(List&lt;TEntity&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="FreeSql.BaseRepository-1.html#FreeSql_BaseRepository_1_EndEdit_System_Collections_Generic_List__0__">BaseRepository&lt;TEntity&gt;.EndEdit(List&lt;TEntity&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="FreeSql.BaseRepository-1.html#FreeSql_BaseRepository_1_DeleteAsync_System_Linq_Expressions_Expression_System_Func__0_System_Boolean___System_Threading_CancellationToken_">BaseRepository&lt;TEntity&gt;.DeleteAsync(Expression&lt;Func&lt;TEntity, Boolean&gt;&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="FreeSql.BaseRepository-1.html#FreeSql_BaseRepository_1_DeleteAsync__0_System_Threading_CancellationToken_">BaseRepository&lt;TEntity&gt;.DeleteAsync(TEntity, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="FreeSql.BaseRepository-1.html#FreeSql_BaseRepository_1_DeleteAsync_System_Collections_Generic_IEnumerable__0__System_Threading_CancellationToken_">BaseRepository&lt;TEntity&gt;.DeleteAsync(IEnumerable&lt;TEntity&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="FreeSql.BaseRepository-1.html#FreeSql_BaseRepository_1_InsertAsync__0_System_Threading_CancellationToken_">BaseRepository&lt;TEntity&gt;.InsertAsync(TEntity, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="FreeSql.BaseRepository-1.html#FreeSql_BaseRepository_1_InsertAsync_System_Collections_Generic_IEnumerable__0__System_Threading_CancellationToken_">BaseRepository&lt;TEntity&gt;.InsertAsync(IEnumerable&lt;TEntity&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="FreeSql.BaseRepository-1.html#FreeSql_BaseRepository_1_UpdateAsync__0_System_Threading_CancellationToken_">BaseRepository&lt;TEntity&gt;.UpdateAsync(TEntity, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="FreeSql.BaseRepository-1.html#FreeSql_BaseRepository_1_UpdateAsync_System_Collections_Generic_IEnumerable__0__System_Threading_CancellationToken_">BaseRepository&lt;TEntity&gt;.UpdateAsync(IEnumerable&lt;TEntity&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="FreeSql.BaseRepository-1.html#FreeSql_BaseRepository_1_InsertOrUpdateAsync__0_System_Threading_CancellationToken_">BaseRepository&lt;TEntity&gt;.InsertOrUpdateAsync(TEntity, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="FreeSql.BaseRepository-1.html#FreeSql_BaseRepository_1_SaveManyAsync__0_System_String_System_Threading_CancellationToken_">BaseRepository&lt;TEntity&gt;.SaveManyAsync(TEntity, String, CancellationToken)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="../../api/FreeSql.html">FreeSql</a></h6>
+  <h6><strong>Assembly</strong>: FreeSql.DbContext.dll</h6>
+  <h5 id="FreeSql_BaseRepository_2_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class BaseRepository&lt;TEntity, TKey&gt; : BaseRepository&lt;TEntity&gt;, IBaseRepository&lt;TEntity, TKey&gt;, IBaseRepository&lt;TEntity&gt;, IBaseRepository, IDisposable where TEntity : class</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TEntity</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TKey</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_BaseRepository_2__ctor_IFreeSql_System_Linq_Expressions_Expression_System_Func__0_System_Boolean___System_Func_System_String_System_String__.md&amp;value=---%0Auid%3A%20FreeSql.BaseRepository%602.%23ctor(IFreeSql%2CSystem.Linq.Expressions.Expression%7BSystem.Func%7B%600%2CSystem.Boolean%7D%7D%2CSystem.Func%7BSystem.String%2CSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql.DbContext/Repository/Repository/BaseRepository.cs/#L177">View Source</a>
+  </span>
+  <a id="FreeSql_BaseRepository_2__ctor_" data-uid="FreeSql.BaseRepository`2.#ctor*"></a>
+  <h4 id="FreeSql_BaseRepository_2__ctor_IFreeSql_System_Linq_Expressions_Expression_System_Func__0_System_Boolean___System_Func_System_String_System_String__" data-uid="FreeSql.BaseRepository`2.#ctor(IFreeSql,System.Linq.Expressions.Expression{System.Func{`0,System.Boolean}},System.Func{System.String,System.String})">BaseRepository(IFreeSql, Expression&lt;Func&lt;TEntity, Boolean&gt;&gt;, Func&lt;String, String&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BaseRepository(IFreeSql fsql, Expression&lt;Func&lt;TEntity, bool&gt;&gt; filter, Func&lt;string, string&gt; asTable = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IFreeSql</span></td>
+        <td><span class="parametername">fsql</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;TEntity, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+        <td><span class="parametername">filter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">asTable</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_BaseRepository_2_Delete__1_.md&amp;value=---%0Auid%3A%20FreeSql.BaseRepository%602.Delete(%601)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql.DbContext/Repository/Repository/BaseRepository.cs/#L191">View Source</a>
+  </span>
+  <a id="FreeSql_BaseRepository_2_Delete_" data-uid="FreeSql.BaseRepository`2.Delete*"></a>
+  <h4 id="FreeSql_BaseRepository_2_Delete__1_" data-uid="FreeSql.BaseRepository`2.Delete(`1)">Delete(TKey)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int Delete(TKey id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TKey</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_BaseRepository_2_DeleteAsync__1_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20FreeSql.BaseRepository%602.DeleteAsync(%601%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql.DbContext/Repository/Repository/BaseRepositoryAsync.cs/#L76">View Source</a>
+  </span>
+  <a id="FreeSql_BaseRepository_2_DeleteAsync_" data-uid="FreeSql.BaseRepository`2.DeleteAsync*"></a>
+  <h4 id="FreeSql_BaseRepository_2_DeleteAsync__1_System_Threading_CancellationToken_" data-uid="FreeSql.BaseRepository`2.DeleteAsync(`1,System.Threading.CancellationToken)">DeleteAsync(TKey, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;int&gt; DeleteAsync(TKey id, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TKey</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_BaseRepository_2_Find__1_.md&amp;value=---%0Auid%3A%20FreeSql.BaseRepository%602.Find(%601)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql.DbContext/Repository/Repository/BaseRepository.cs/#L192">View Source</a>
+  </span>
+  <a id="FreeSql_BaseRepository_2_Find_" data-uid="FreeSql.BaseRepository`2.Find*"></a>
+  <h4 id="FreeSql_BaseRepository_2_Find__1_" data-uid="FreeSql.BaseRepository`2.Find(`1)">Find(TKey)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual TEntity Find(TKey id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TKey</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TEntity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_BaseRepository_2_FindAsync__1_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20FreeSql.BaseRepository%602.FindAsync(%601%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql.DbContext/Repository/Repository/BaseRepositoryAsync.cs/#L77">View Source</a>
+  </span>
+  <a id="FreeSql_BaseRepository_2_FindAsync_" data-uid="FreeSql.BaseRepository`2.FindAsync*"></a>
+  <h4 id="FreeSql_BaseRepository_2_FindAsync__1_System_Threading_CancellationToken_" data-uid="FreeSql.BaseRepository`2.FindAsync(`1,System.Threading.CancellationToken)">FindAsync(TKey, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Task&lt;TEntity&gt; FindAsync(TKey id, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TKey</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;TEntity&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_BaseRepository_2_Get__1_.md&amp;value=---%0Auid%3A%20FreeSql.BaseRepository%602.Get(%601)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql.DbContext/Repository/Repository/BaseRepository.cs/#L193">View Source</a>
+  </span>
+  <a id="FreeSql_BaseRepository_2_Get_" data-uid="FreeSql.BaseRepository`2.Get*"></a>
+  <h4 id="FreeSql_BaseRepository_2_Get__1_" data-uid="FreeSql.BaseRepository`2.Get(`1)">Get(TKey)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TEntity Get(TKey id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TKey</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TEntity</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_BaseRepository_2_GetAsync__1_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20FreeSql.BaseRepository%602.GetAsync(%601%2CSystem.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql.DbContext/Repository/Repository/BaseRepositoryAsync.cs/#L78">View Source</a>
+  </span>
+  <a id="FreeSql_BaseRepository_2_GetAsync_" data-uid="FreeSql.BaseRepository`2.GetAsync*"></a>
+  <h4 id="FreeSql_BaseRepository_2_GetAsync__1_System_Threading_CancellationToken_" data-uid="FreeSql.BaseRepository`2.GetAsync(`1,System.Threading.CancellationToken)">GetAsync(TKey, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;TEntity&gt; GetAsync(TKey id, CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TKey</span></td>
+        <td><span class="parametername">id</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;TEntity&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="FreeSql.IBaseRepository-2.html">IBaseRepository&lt;TEntity, TKey&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="FreeSql.IBaseRepository-1.html">IBaseRepository&lt;TEntity&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="FreeSql.IBaseRepository.html">IBaseRepository</a>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_BaseRepository_2.md&amp;value=---%0Auid%3A%20FreeSql.BaseRepository%602%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql.DbContext/Repository/Repository/BaseRepositoryAsync.cs/#L74" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

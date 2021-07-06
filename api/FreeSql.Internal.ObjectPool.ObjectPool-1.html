@@ -1,0 +1,666 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ObjectPool&lt;T&gt;
+   | FreeSql API Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ObjectPool&lt;T&gt;
+   | FreeSql API Docs ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src=".././images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="FreeSql.Internal.ObjectPool.ObjectPool`1">
+  
+  
+  <h1 id="FreeSql_Internal_ObjectPool_ObjectPool_1" data-uid="FreeSql.Internal.ObjectPool.ObjectPool`1" class="text-break">Class ObjectPool&lt;T&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>对象池管理类</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ObjectPool&lt;T&gt;</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="FreeSql.Internal.ObjectPool.IObjectPool-1.html">IObjectPool</a>&lt;T&gt;</div>
+    <div><span class="xref">System.IDisposable</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="FreeSql.Internal.ObjectPool.html">FreeSql.Internal.ObjectPool</a></h6>
+  <h6><strong>Assembly</strong>: FreeSql.dll</h6>
+  <h5 id="FreeSql_Internal_ObjectPool_ObjectPool_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ObjectPool&lt;T&gt; : IObjectPool&lt;T&gt;, IDisposable</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>对象类型</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_Internal_ObjectPool_ObjectPool_1__ctor_FreeSql_Internal_ObjectPool_IPolicy__0__.md&amp;value=---%0Auid%3A%20FreeSql.Internal.ObjectPool.ObjectPool%601.%23ctor(FreeSql.Internal.ObjectPool.IPolicy%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/Internal/ObjectPool/ObjectPool.cs/#L249">View Source</a>
+  </span>
+  <a id="FreeSql_Internal_ObjectPool_ObjectPool_1__ctor_" data-uid="FreeSql.Internal.ObjectPool.ObjectPool`1.#ctor*"></a>
+  <h4 id="FreeSql_Internal_ObjectPool_ObjectPool_1__ctor_FreeSql_Internal_ObjectPool_IPolicy__0__" data-uid="FreeSql.Internal.ObjectPool.ObjectPool`1.#ctor(FreeSql.Internal.ObjectPool.IPolicy{`0})">ObjectPool(IPolicy&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>创建对象池</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectPool(IPolicy&lt;T&gt; policy)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FreeSql.Internal.ObjectPool.IPolicy-1.html">IPolicy</a>&lt;T&gt;</td>
+        <td><span class="parametername">policy</span></td>
+        <td><p>策略</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_Internal_ObjectPool_ObjectPool_1__ctor_System_Int32_System_Func__0__System_Action_FreeSql_Internal_ObjectPool_Object__0___.md&amp;value=---%0Auid%3A%20FreeSql.Internal.ObjectPool.ObjectPool%601.%23ctor(System.Int32%2CSystem.Func%7B%600%7D%2CSystem.Action%7BFreeSql.Internal.ObjectPool.Object%7B%600%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/Internal/ObjectPool/ObjectPool.cs/#L242">View Source</a>
+  </span>
+  <a id="FreeSql_Internal_ObjectPool_ObjectPool_1__ctor_" data-uid="FreeSql.Internal.ObjectPool.ObjectPool`1.#ctor*"></a>
+  <h4 id="FreeSql_Internal_ObjectPool_ObjectPool_1__ctor_System_Int32_System_Func__0__System_Action_FreeSql_Internal_ObjectPool_Object__0___" data-uid="FreeSql.Internal.ObjectPool.ObjectPool`1.#ctor(System.Int32,System.Func{`0},System.Action{FreeSql.Internal.ObjectPool.Object{`0}})">ObjectPool(Int32, Func&lt;T&gt;, Action&lt;Object&lt;T&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>创建对象池</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObjectPool(int poolsize, Func&lt;T&gt; createObject, Action&lt;Object&lt;T&gt;&gt; onGetObject = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">poolsize</span></td>
+        <td><p>池大小</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;T&gt;</td>
+        <td><span class="parametername">createObject</span></td>
+        <td><p>池内对象的创建委托</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span>&lt;<a class="xref" href="FreeSql.Internal.ObjectPool.Object-1.html">Object</a>&lt;T&gt;&gt;</td>
+        <td><span class="parametername">onGetObject</span></td>
+        <td><p>获取池内对象成功后，进行使用前操作</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_Internal_ObjectPool_ObjectPool_1_IsAvailable.md&amp;value=---%0Auid%3A%20FreeSql.Internal.ObjectPool.ObjectPool%601.IsAvailable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/Internal/ObjectPool/ObjectPool.cs/#L63">View Source</a>
+  </span>
+  <a id="FreeSql_Internal_ObjectPool_ObjectPool_1_IsAvailable_" data-uid="FreeSql.Internal.ObjectPool.ObjectPool`1.IsAvailable*"></a>
+  <h4 id="FreeSql_Internal_ObjectPool_ObjectPool_1_IsAvailable" data-uid="FreeSql.Internal.ObjectPool.ObjectPool`1.IsAvailable">IsAvailable</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsAvailable { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_Internal_ObjectPool_ObjectPool_1_Policy.md&amp;value=---%0Auid%3A%20FreeSql.Internal.ObjectPool.ObjectPool%601.Policy%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/Internal/ObjectPool/ObjectPool.cs/#L53">View Source</a>
+  </span>
+  <a id="FreeSql_Internal_ObjectPool_ObjectPool_1_Policy_" data-uid="FreeSql.Internal.ObjectPool.ObjectPool`1.Policy*"></a>
+  <h4 id="FreeSql_Internal_ObjectPool_ObjectPool_1_Policy" data-uid="FreeSql.Internal.ObjectPool.ObjectPool`1.Policy">Policy</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IPolicy&lt;T&gt; Policy { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FreeSql.Internal.ObjectPool.IPolicy-1.html">IPolicy</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_Internal_ObjectPool_ObjectPool_1_Statistics.md&amp;value=---%0Auid%3A%20FreeSql.Internal.ObjectPool.ObjectPool%601.Statistics%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/Internal/ObjectPool/ObjectPool.cs/#L217">View Source</a>
+  </span>
+  <a id="FreeSql_Internal_ObjectPool_ObjectPool_1_Statistics_" data-uid="FreeSql.Internal.ObjectPool.ObjectPool`1.Statistics*"></a>
+  <h4 id="FreeSql_Internal_ObjectPool_ObjectPool_1_Statistics" data-uid="FreeSql.Internal.ObjectPool.ObjectPool`1.Statistics">Statistics</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Statistics { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_Internal_ObjectPool_ObjectPool_1_StatisticsFullily.md&amp;value=---%0Auid%3A%20FreeSql.Internal.ObjectPool.ObjectPool%601.StatisticsFullily%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/Internal/ObjectPool/ObjectPool.cs/#L218">View Source</a>
+  </span>
+  <a id="FreeSql_Internal_ObjectPool_ObjectPool_1_StatisticsFullily_" data-uid="FreeSql.Internal.ObjectPool.ObjectPool`1.StatisticsFullily*"></a>
+  <h4 id="FreeSql_Internal_ObjectPool_ObjectPool_1_StatisticsFullily" data-uid="FreeSql.Internal.ObjectPool.ObjectPool`1.StatisticsFullily">StatisticsFullily</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string StatisticsFullily { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_Internal_ObjectPool_ObjectPool_1_UnavailableException.md&amp;value=---%0Auid%3A%20FreeSql.Internal.ObjectPool.ObjectPool%601.UnavailableException%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/Internal/ObjectPool/ObjectPool.cs/#L64">View Source</a>
+  </span>
+  <a id="FreeSql_Internal_ObjectPool_ObjectPool_1_UnavailableException_" data-uid="FreeSql.Internal.ObjectPool.ObjectPool`1.UnavailableException*"></a>
+  <h4 id="FreeSql_Internal_ObjectPool_ObjectPool_1_UnavailableException" data-uid="FreeSql.Internal.ObjectPool.ObjectPool`1.UnavailableException">UnavailableException</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Exception UnavailableException { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_Internal_ObjectPool_ObjectPool_1_UnavailableTime.md&amp;value=---%0Auid%3A%20FreeSql.Internal.ObjectPool.ObjectPool%601.UnavailableTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/Internal/ObjectPool/ObjectPool.cs/#L65">View Source</a>
+  </span>
+  <a id="FreeSql_Internal_ObjectPool_ObjectPool_1_UnavailableTime_" data-uid="FreeSql.Internal.ObjectPool.ObjectPool`1.UnavailableTime*"></a>
+  <h4 id="FreeSql_Internal_ObjectPool_ObjectPool_1_UnavailableTime" data-uid="FreeSql.Internal.ObjectPool.ObjectPool`1.UnavailableTime">UnavailableTime</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime? UnavailableTime { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.DateTime</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_Internal_ObjectPool_ObjectPool_1_Dispose.md&amp;value=---%0Auid%3A%20FreeSql.Internal.ObjectPool.ObjectPool%601.Dispose%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/Internal/ObjectPool/ObjectPool.cs/#L510">View Source</a>
+  </span>
+  <a id="FreeSql_Internal_ObjectPool_ObjectPool_1_Dispose_" data-uid="FreeSql.Internal.ObjectPool.ObjectPool`1.Dispose*"></a>
+  <h4 id="FreeSql_Internal_ObjectPool_ObjectPool_1_Dispose" data-uid="FreeSql.Internal.ObjectPool.ObjectPool`1.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_Internal_ObjectPool_ObjectPool_1_Get_System_Nullable_System_TimeSpan__.md&amp;value=---%0Auid%3A%20FreeSql.Internal.ObjectPool.ObjectPool%601.Get(System.Nullable%7BSystem.TimeSpan%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/Internal/ObjectPool/ObjectPool.cs/#L311">View Source</a>
+  </span>
+  <a id="FreeSql_Internal_ObjectPool_ObjectPool_1_Get_" data-uid="FreeSql.Internal.ObjectPool.ObjectPool`1.Get*"></a>
+  <h4 id="FreeSql_Internal_ObjectPool_ObjectPool_1_Get_System_Nullable_System_TimeSpan__" data-uid="FreeSql.Internal.ObjectPool.ObjectPool`1.Get(System.Nullable{System.TimeSpan})">Get(Nullable&lt;TimeSpan&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Object&lt;T&gt; Get(TimeSpan? timeout = default(TimeSpan? ))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.TimeSpan</span>&gt;</td>
+        <td><span class="parametername">timeout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FreeSql.Internal.ObjectPool.Object-1.html">Object</a>&lt;T&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_Internal_ObjectPool_ObjectPool_1_GetAsync.md&amp;value=---%0Auid%3A%20FreeSql.Internal.ObjectPool.ObjectPool%601.GetAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/Internal/ObjectPool/ObjectPool.cs/#L368">View Source</a>
+  </span>
+  <a id="FreeSql_Internal_ObjectPool_ObjectPool_1_GetAsync_" data-uid="FreeSql.Internal.ObjectPool.ObjectPool`1.GetAsync*"></a>
+  <h4 id="FreeSql_Internal_ObjectPool_ObjectPool_1_GetAsync" data-uid="FreeSql.Internal.ObjectPool.ObjectPool`1.GetAsync">GetAsync()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;Object&lt;T&gt;&gt; GetAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<a class="xref" href="FreeSql.Internal.ObjectPool.Object-1.html">Object</a>&lt;T&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_Internal_ObjectPool_ObjectPool_1_LiveCheckAvailable.md&amp;value=---%0Auid%3A%20FreeSql.Internal.ObjectPool.ObjectPool%601.LiveCheckAvailable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/Internal/ObjectPool/ObjectPool.cs/#L185">View Source</a>
+  </span>
+  <a id="FreeSql_Internal_ObjectPool_ObjectPool_1_LiveCheckAvailable_" data-uid="FreeSql.Internal.ObjectPool.ObjectPool`1.LiveCheckAvailable*"></a>
+  <h4 id="FreeSql_Internal_ObjectPool_ObjectPool_1_LiveCheckAvailable" data-uid="FreeSql.Internal.ObjectPool.ObjectPool`1.LiveCheckAvailable">LiveCheckAvailable()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool LiveCheckAvailable()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_Internal_ObjectPool_ObjectPool_1_Return_FreeSql_Internal_ObjectPool_Object__0__System_Boolean_.md&amp;value=---%0Auid%3A%20FreeSql.Internal.ObjectPool.ObjectPool%601.Return(FreeSql.Internal.ObjectPool.Object%7B%600%7D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/Internal/ObjectPool/ObjectPool.cs/#L421">View Source</a>
+  </span>
+  <a id="FreeSql_Internal_ObjectPool_ObjectPool_1_Return_" data-uid="FreeSql.Internal.ObjectPool.ObjectPool`1.Return*"></a>
+  <h4 id="FreeSql_Internal_ObjectPool_ObjectPool_1_Return_FreeSql_Internal_ObjectPool_Object__0__System_Boolean_" data-uid="FreeSql.Internal.ObjectPool.ObjectPool`1.Return(FreeSql.Internal.ObjectPool.Object{`0},System.Boolean)">Return(Object&lt;T&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Return(Object&lt;T&gt; obj, bool isReset = false)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FreeSql.Internal.ObjectPool.Object-1.html">Object</a>&lt;T&gt;</td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">isReset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_Internal_ObjectPool_ObjectPool_1_SetUnavailable_System_Exception_.md&amp;value=---%0Auid%3A%20FreeSql.Internal.ObjectPool.ObjectPool%601.SetUnavailable(System.Exception)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/Internal/ObjectPool/ObjectPool.cs/#L69">View Source</a>
+  </span>
+  <a id="FreeSql_Internal_ObjectPool_ObjectPool_1_SetUnavailable_" data-uid="FreeSql.Internal.ObjectPool.ObjectPool`1.SetUnavailable*"></a>
+  <h4 id="FreeSql_Internal_ObjectPool_ObjectPool_1_SetUnavailable_System_Exception_" data-uid="FreeSql.Internal.ObjectPool.ObjectPool`1.SetUnavailable(System.Exception)">SetUnavailable(Exception)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetUnavailable(Exception exception)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Exception</span></td>
+        <td><span class="parametername">exception</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="FreeSql.Internal.ObjectPool.IObjectPool-1.html">IObjectPool&lt;T&gt;</a>
+  </div>
+  <div>
+      <span class="xref">System.IDisposable</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_Internal_ObjectPool_ObjectPool_1.md&amp;value=---%0Auid%3A%20FreeSql.Internal.ObjectPool.ObjectPool%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/Internal/ObjectPool/ObjectPool.cs/#L51" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

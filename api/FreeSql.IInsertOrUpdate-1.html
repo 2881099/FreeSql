@@ -1,0 +1,731 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IInsertOrUpdate&lt;T1&gt;
+   | FreeSql API Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IInsertOrUpdate&lt;T1&gt;
+   | FreeSql API Docs ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src=".././images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="FreeSql.IInsertOrUpdate`1">
+  
+  
+  <h1 id="FreeSql_IInsertOrUpdate_1" data-uid="FreeSql.IInsertOrUpdate`1" class="text-break">Interface IInsertOrUpdate&lt;T1&gt;
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="FreeSql.html">FreeSql</a></h6>
+  <h6><strong>Assembly</strong>: FreeSql.dll</h6>
+  <h5 id="FreeSql_IInsertOrUpdate_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IInsertOrUpdate&lt;T1&gt;
+    where T1 : class</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T1</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_IInsertOrUpdate_1_AsTable_System_Func_System_String_System_String__.md&amp;value=---%0Auid%3A%20FreeSql.IInsertOrUpdate%601.AsTable(System.Func%7BSystem.String%2CSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/Interface/Curd/IInsertOrUpdate.cs/#L70">View Source</a>
+  </span>
+  <a id="FreeSql_IInsertOrUpdate_1_AsTable_" data-uid="FreeSql.IInsertOrUpdate`1.AsTable*"></a>
+  <h4 id="FreeSql_IInsertOrUpdate_1_AsTable_System_Func_System_String_System_String__" data-uid="FreeSql.IInsertOrUpdate`1.AsTable(System.Func{System.String,System.String})">AsTable(Func&lt;String, String&gt;)</h4>
+  <div class="markdown level1 summary"><p>设置表名规则，可用于分库/分表，参数1：默认表名；返回值：新表名；</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IInsertOrUpdate&lt;T1&gt; AsTable(Func&lt;string, string&gt; tableRule)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Func</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;</td>
+        <td><span class="parametername">tableRule</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FreeSql.IInsertOrUpdate-1.html">IInsertOrUpdate</a>&lt;T1&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_IInsertOrUpdate_1_AsType_System_Type_.md&amp;value=---%0Auid%3A%20FreeSql.IInsertOrUpdate%601.AsType(System.Type)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/Interface/Curd/IInsertOrUpdate.cs/#L76">View Source</a>
+  </span>
+  <a id="FreeSql_IInsertOrUpdate_1_AsType_" data-uid="FreeSql.IInsertOrUpdate`1.AsType*"></a>
+  <h4 id="FreeSql_IInsertOrUpdate_1_AsType_System_Type_" data-uid="FreeSql.IInsertOrUpdate`1.AsType(System.Type)">AsType(Type)</h4>
+  <div class="markdown level1 summary"><p>动态Type，在使用 Update&lt;object&gt; 后使用本方法，指定实体类型</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IInsertOrUpdate&lt;T1&gt; AsType(Type entityType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">entityType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FreeSql.IInsertOrUpdate-1.html">IInsertOrUpdate</a>&lt;T1&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_IInsertOrUpdate_1_CommandTimeout_System_Int32_.md&amp;value=---%0Auid%3A%20FreeSql.IInsertOrUpdate%601.CommandTimeout(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/Interface/Curd/IInsertOrUpdate.cs/#L30">View Source</a>
+  </span>
+  <a id="FreeSql_IInsertOrUpdate_1_CommandTimeout_" data-uid="FreeSql.IInsertOrUpdate`1.CommandTimeout*"></a>
+  <h4 id="FreeSql_IInsertOrUpdate_1_CommandTimeout_System_Int32_" data-uid="FreeSql.IInsertOrUpdate`1.CommandTimeout(System.Int32)">CommandTimeout(Int32)</h4>
+  <div class="markdown level1 summary"><p>命令超时设置(秒)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IInsertOrUpdate&lt;T1&gt; CommandTimeout(int timeout)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">timeout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FreeSql.IInsertOrUpdate-1.html">IInsertOrUpdate</a>&lt;T1&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_IInsertOrUpdate_1_ExecuteAffrows.md&amp;value=---%0Auid%3A%20FreeSql.IInsertOrUpdate%601.ExecuteAffrows%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/Interface/Curd/IInsertOrUpdate.cs/#L86">View Source</a>
+  </span>
+  <a id="FreeSql_IInsertOrUpdate_1_ExecuteAffrows_" data-uid="FreeSql.IInsertOrUpdate`1.ExecuteAffrows*"></a>
+  <h4 id="FreeSql_IInsertOrUpdate_1_ExecuteAffrows" data-uid="FreeSql.IInsertOrUpdate`1.ExecuteAffrows">ExecuteAffrows()</h4>
+  <div class="markdown level1 summary"><p>执行SQL语句，返回影响的行数</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int ExecuteAffrows()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_IInsertOrUpdate_1_ExecuteAffrowsAsync_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20FreeSql.IInsertOrUpdate%601.ExecuteAffrowsAsync(System.Threading.CancellationToken)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/Interface/Curd/IInsertOrUpdate.cs/#L90">View Source</a>
+  </span>
+  <a id="FreeSql_IInsertOrUpdate_1_ExecuteAffrowsAsync_" data-uid="FreeSql.IInsertOrUpdate`1.ExecuteAffrowsAsync*"></a>
+  <h4 id="FreeSql_IInsertOrUpdate_1_ExecuteAffrowsAsync_System_Threading_CancellationToken_" data-uid="FreeSql.IInsertOrUpdate`1.ExecuteAffrowsAsync(System.Threading.CancellationToken)">ExecuteAffrowsAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;int&gt; ExecuteAffrowsAsync(CancellationToken cancellationToken = default(CancellationToken))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.CancellationToken</span></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_IInsertOrUpdate_1_IfExistsDoNothing.md&amp;value=---%0Auid%3A%20FreeSql.IInsertOrUpdate%601.IfExistsDoNothing%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/Interface/Curd/IInsertOrUpdate.cs/#L50">View Source</a>
+  </span>
+  <a id="FreeSql_IInsertOrUpdate_1_IfExistsDoNothing_" data-uid="FreeSql.IInsertOrUpdate`1.IfExistsDoNothing*"></a>
+  <h4 id="FreeSql_IInsertOrUpdate_1_IfExistsDoNothing" data-uid="FreeSql.IInsertOrUpdate`1.IfExistsDoNothing">IfExistsDoNothing()</h4>
+  <div class="markdown level1 summary"><p>当记录存在时，什么都不做<p>
+换句话：只有记录不存在时才插入</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IInsertOrUpdate&lt;T1&gt; IfExistsDoNothing()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FreeSql.IInsertOrUpdate-1.html">IInsertOrUpdate</a>&lt;T1&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_IInsertOrUpdate_1_SetSource__0_.md&amp;value=---%0Auid%3A%20FreeSql.IInsertOrUpdate%601.SetSource(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/Interface/Curd/IInsertOrUpdate.cs/#L37">View Source</a>
+  </span>
+  <a id="FreeSql_IInsertOrUpdate_1_SetSource_" data-uid="FreeSql.IInsertOrUpdate`1.SetSource*"></a>
+  <h4 id="FreeSql_IInsertOrUpdate_1_SetSource__0_" data-uid="FreeSql.IInsertOrUpdate`1.SetSource(`0)">SetSource(T1)</h4>
+  <div class="markdown level1 summary"><p>添加或更新，设置实体</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IInsertOrUpdate&lt;T1&gt; SetSource(T1 source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T1</span></td>
+        <td><span class="parametername">source</span></td>
+        <td><p>实体</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FreeSql.IInsertOrUpdate-1.html">IInsertOrUpdate</a>&lt;T1&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_IInsertOrUpdate_1_SetSource_System_Collections_Generic_IEnumerable__0__.md&amp;value=---%0Auid%3A%20FreeSql.IInsertOrUpdate%601.SetSource(System.Collections.Generic.IEnumerable%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/Interface/Curd/IInsertOrUpdate.cs/#L43">View Source</a>
+  </span>
+  <a id="FreeSql_IInsertOrUpdate_1_SetSource_" data-uid="FreeSql.IInsertOrUpdate`1.SetSource*"></a>
+  <h4 id="FreeSql_IInsertOrUpdate_1_SetSource_System_Collections_Generic_IEnumerable__0__" data-uid="FreeSql.IInsertOrUpdate`1.SetSource(System.Collections.Generic.IEnumerable{`0})">SetSource(IEnumerable&lt;T1&gt;)</h4>
+  <div class="markdown level1 summary"><p>添加或更新，设置实体集合</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IInsertOrUpdate&lt;T1&gt; SetSource(IEnumerable&lt;T1&gt; source)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;T1&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>实体集合</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FreeSql.IInsertOrUpdate-1.html">IInsertOrUpdate</a>&lt;T1&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_IInsertOrUpdate_1_ToSql.md&amp;value=---%0Auid%3A%20FreeSql.IInsertOrUpdate%601.ToSql%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/Interface/Curd/IInsertOrUpdate.cs/#L81">View Source</a>
+  </span>
+  <a id="FreeSql_IInsertOrUpdate_1_ToSql_" data-uid="FreeSql.IInsertOrUpdate`1.ToSql*"></a>
+  <h4 id="FreeSql_IInsertOrUpdate_1_ToSql" data-uid="FreeSql.IInsertOrUpdate`1.ToSql">ToSql()</h4>
+  <div class="markdown level1 summary"><p>返回即将执行的SQL语句</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string ToSql()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_IInsertOrUpdate_1_UpdateColumns_System_Linq_Expressions_Expression_System_Func__0_System_Object___.md&amp;value=---%0Auid%3A%20FreeSql.IInsertOrUpdate%601.UpdateColumns(System.Linq.Expressions.Expression%7BSystem.Func%7B%600%2CSystem.Object%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/Interface/Curd/IInsertOrUpdate.cs/#L57">View Source</a>
+  </span>
+  <a id="FreeSql_IInsertOrUpdate_1_UpdateColumns_" data-uid="FreeSql.IInsertOrUpdate`1.UpdateColumns*"></a>
+  <h4 id="FreeSql_IInsertOrUpdate_1_UpdateColumns_System_Linq_Expressions_Expression_System_Func__0_System_Object___" data-uid="FreeSql.IInsertOrUpdate`1.UpdateColumns(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})">UpdateColumns(Expression&lt;Func&lt;T1, Object&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>当记录存在时，指定只更新的字段，UpdateColumns(a =&gt; a.Name) | UpdateColumns(a =&gt; new{a.Name,a.Time}) | UpdateColumns(a =&gt; new[]{&quot;name&quot;,&quot;time&quot;})</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IInsertOrUpdate&lt;T1&gt; UpdateColumns(Expression&lt;Func&lt;T1, object&gt;&gt; columns)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Linq.Expressions.Expression</span>&lt;<span class="xref">System.Func</span>&lt;T1, <span class="xref">System.Object</span>&gt;&gt;</td>
+        <td><span class="parametername">columns</span></td>
+        <td><p>lambda选择列</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FreeSql.IInsertOrUpdate-1.html">IInsertOrUpdate</a>&lt;T1&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_IInsertOrUpdate_1_UpdateColumns_System_String___.md&amp;value=---%0Auid%3A%20FreeSql.IInsertOrUpdate%601.UpdateColumns(System.String%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/Interface/Curd/IInsertOrUpdate.cs/#L63">View Source</a>
+  </span>
+  <a id="FreeSql_IInsertOrUpdate_1_UpdateColumns_" data-uid="FreeSql.IInsertOrUpdate`1.UpdateColumns*"></a>
+  <h4 id="FreeSql_IInsertOrUpdate_1_UpdateColumns_System_String___" data-uid="FreeSql.IInsertOrUpdate`1.UpdateColumns(System.String[])">UpdateColumns(String[])</h4>
+  <div class="markdown level1 summary"><p>当记录存在时，指定只更新的字段</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IInsertOrUpdate&lt;T1&gt; UpdateColumns(string[] columns)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">columns</span></td>
+        <td><p>属性名，或者字段名</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FreeSql.IInsertOrUpdate-1.html">IInsertOrUpdate</a>&lt;T1&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_IInsertOrUpdate_1_WithConnection_System_Data_Common_DbConnection_.md&amp;value=---%0Auid%3A%20FreeSql.IInsertOrUpdate%601.WithConnection(System.Data.Common.DbConnection)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/Interface/Curd/IInsertOrUpdate.cs/#L24">View Source</a>
+  </span>
+  <a id="FreeSql_IInsertOrUpdate_1_WithConnection_" data-uid="FreeSql.IInsertOrUpdate`1.WithConnection*"></a>
+  <h4 id="FreeSql_IInsertOrUpdate_1_WithConnection_System_Data_Common_DbConnection_" data-uid="FreeSql.IInsertOrUpdate`1.WithConnection(System.Data.Common.DbConnection)">WithConnection(DbConnection)</h4>
+  <div class="markdown level1 summary"><p>指定事务对象</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IInsertOrUpdate&lt;T1&gt; WithConnection(DbConnection connection)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.Common.DbConnection</span></td>
+        <td><span class="parametername">connection</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FreeSql.IInsertOrUpdate-1.html">IInsertOrUpdate</a>&lt;T1&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_IInsertOrUpdate_1_WithTransaction_System_Data_Common_DbTransaction_.md&amp;value=---%0Auid%3A%20FreeSql.IInsertOrUpdate%601.WithTransaction(System.Data.Common.DbTransaction)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/Interface/Curd/IInsertOrUpdate.cs/#L18">View Source</a>
+  </span>
+  <a id="FreeSql_IInsertOrUpdate_1_WithTransaction_" data-uid="FreeSql.IInsertOrUpdate`1.WithTransaction*"></a>
+  <h4 id="FreeSql_IInsertOrUpdate_1_WithTransaction_System_Data_Common_DbTransaction_" data-uid="FreeSql.IInsertOrUpdate`1.WithTransaction(System.Data.Common.DbTransaction)">WithTransaction(DbTransaction)</h4>
+  <div class="markdown level1 summary"><p>指定事务对象</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IInsertOrUpdate&lt;T1&gt; WithTransaction(DbTransaction transaction)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.Common.DbTransaction</span></td>
+        <td><span class="parametername">transaction</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="FreeSql.IInsertOrUpdate-1.html">IInsertOrUpdate</a>&lt;T1&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_IInsertOrUpdate_1.md&amp;value=---%0Auid%3A%20FreeSql.IInsertOrUpdate%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/Interface/Curd/IInsertOrUpdate.cs/#L10" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,894 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ColumnAttribute
+   | FreeSql API Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ColumnAttribute
+   | FreeSql API Docs ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src=".././images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="FreeSql.DataAnnotations.ColumnAttribute">
+  
+  
+  <h1 id="FreeSql_DataAnnotations_ColumnAttribute" data-uid="FreeSql.DataAnnotations.ColumnAttribute" class="text-break">Class ColumnAttribute
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">System.Attribute</span></div>
+    <div class="level2"><span class="xref">ColumnAttribute</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Attribute.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Attribute.GetCustomAttribute(System.Reflection.Assembly, System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">System.Attribute.GetCustomAttribute(System.Reflection.Assembly, System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">System.Attribute.GetCustomAttribute(System.Reflection.MemberInfo, System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">System.Attribute.GetCustomAttribute(System.Reflection.MemberInfo, System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">System.Attribute.GetCustomAttribute(System.Reflection.Module, System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">System.Attribute.GetCustomAttribute(System.Reflection.Module, System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">System.Attribute.GetCustomAttribute(System.Reflection.ParameterInfo, System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">System.Attribute.GetCustomAttribute(System.Reflection.ParameterInfo, System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">System.Attribute.GetCustomAttributes(System.Reflection.Assembly)</span>
+    </div>
+    <div>
+      <span class="xref">System.Attribute.GetCustomAttributes(System.Reflection.Assembly, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">System.Attribute.GetCustomAttributes(System.Reflection.Assembly, System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">System.Attribute.GetCustomAttributes(System.Reflection.Assembly, System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">System.Attribute.GetCustomAttributes(System.Reflection.MemberInfo)</span>
+    </div>
+    <div>
+      <span class="xref">System.Attribute.GetCustomAttributes(System.Reflection.MemberInfo, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">System.Attribute.GetCustomAttributes(System.Reflection.MemberInfo, System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">System.Attribute.GetCustomAttributes(System.Reflection.MemberInfo, System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">System.Attribute.GetCustomAttributes(System.Reflection.Module)</span>
+    </div>
+    <div>
+      <span class="xref">System.Attribute.GetCustomAttributes(System.Reflection.Module, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">System.Attribute.GetCustomAttributes(System.Reflection.Module, System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">System.Attribute.GetCustomAttributes(System.Reflection.Module, System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">System.Attribute.GetCustomAttributes(System.Reflection.ParameterInfo)</span>
+    </div>
+    <div>
+      <span class="xref">System.Attribute.GetCustomAttributes(System.Reflection.ParameterInfo, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">System.Attribute.GetCustomAttributes(System.Reflection.ParameterInfo, System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">System.Attribute.GetCustomAttributes(System.Reflection.ParameterInfo, System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">System.Attribute.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Attribute.IsDefaultAttribute()</span>
+    </div>
+    <div>
+      <span class="xref">System.Attribute.IsDefined(System.Reflection.Assembly, System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">System.Attribute.IsDefined(System.Reflection.Assembly, System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">System.Attribute.IsDefined(System.Reflection.MemberInfo, System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">System.Attribute.IsDefined(System.Reflection.MemberInfo, System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">System.Attribute.IsDefined(System.Reflection.Module, System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">System.Attribute.IsDefined(System.Reflection.Module, System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">System.Attribute.IsDefined(System.Reflection.ParameterInfo, System.Type)</span>
+    </div>
+    <div>
+      <span class="xref">System.Attribute.IsDefined(System.Reflection.ParameterInfo, System.Type, System.Boolean)</span>
+    </div>
+    <div>
+      <span class="xref">System.Attribute.Match(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Attribute.TypeId</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="FreeSql.DataAnnotations.html">FreeSql.DataAnnotations</a></h6>
+  <h6><strong>Assembly</strong>: FreeSql.dll</h6>
+  <h5 id="FreeSql_DataAnnotations_ColumnAttribute_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[AttributeUsage(AttributeTargets.Property)]
+public class ColumnAttribute : Attribute</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_DataAnnotations_ColumnAttribute_CanInsert.md&amp;value=---%0Auid%3A%20FreeSql.DataAnnotations.ColumnAttribute.CanInsert%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/DataAnnotations/ColumnAttribute.cs/#L69">View Source</a>
+  </span>
+  <a id="FreeSql_DataAnnotations_ColumnAttribute_CanInsert_" data-uid="FreeSql.DataAnnotations.ColumnAttribute.CanInsert*"></a>
+  <h4 id="FreeSql_DataAnnotations_ColumnAttribute_CanInsert" data-uid="FreeSql.DataAnnotations.ColumnAttribute.CanInsert">CanInsert</h4>
+  <div class="markdown level1 summary"><p>该字段是否可以插入，默认值true，指定为false插入时该字段会被忽略</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanInsert { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_DataAnnotations_ColumnAttribute_CanUpdate.md&amp;value=---%0Auid%3A%20FreeSql.DataAnnotations.ColumnAttribute.CanUpdate%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/DataAnnotations/ColumnAttribute.cs/#L73">View Source</a>
+  </span>
+  <a id="FreeSql_DataAnnotations_ColumnAttribute_CanUpdate_" data-uid="FreeSql.DataAnnotations.ColumnAttribute.CanUpdate*"></a>
+  <h4 id="FreeSql_DataAnnotations_ColumnAttribute_CanUpdate" data-uid="FreeSql.DataAnnotations.ColumnAttribute.CanUpdate">CanUpdate</h4>
+  <div class="markdown level1 summary"><p>该字段是否可以更新，默认值true，指定为false更新时该字段会被忽略</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool CanUpdate { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_DataAnnotations_ColumnAttribute_DbType.md&amp;value=---%0Auid%3A%20FreeSql.DataAnnotations.ColumnAttribute.DbType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/DataAnnotations/ColumnAttribute.cs/#L22">View Source</a>
+  </span>
+  <a id="FreeSql_DataAnnotations_ColumnAttribute_DbType_" data-uid="FreeSql.DataAnnotations.ColumnAttribute.DbType*"></a>
+  <h4 id="FreeSql_DataAnnotations_ColumnAttribute_DbType" data-uid="FreeSql.DataAnnotations.ColumnAttribute.DbType">DbType</h4>
+  <div class="markdown level1 summary"><p>数据库类型，如： varchar(255) <p>
+字符串长度，可使用特性 [MaxLength(255)]</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DbType { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_DataAnnotations_ColumnAttribute_InsertValueSql.md&amp;value=---%0Auid%3A%20FreeSql.DataAnnotations.ColumnAttribute.InsertValueSql%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/DataAnnotations/ColumnAttribute.cs/#L106">View Source</a>
+  </span>
+  <a id="FreeSql_DataAnnotations_ColumnAttribute_InsertValueSql_" data-uid="FreeSql.DataAnnotations.ColumnAttribute.InsertValueSql*"></a>
+  <h4 id="FreeSql_DataAnnotations_ColumnAttribute_InsertValueSql" data-uid="FreeSql.DataAnnotations.ColumnAttribute.InsertValueSql">InsertValueSql</h4>
+  <div class="markdown level1 summary"><p>执行 Insert 方法时使用此值<p>
+注意：如果是 getdate() 这种请可考虑使用 ServerTime，因为它对数据库间作了适配</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string InsertValueSql { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_DataAnnotations_ColumnAttribute_IsIdentity.md&amp;value=---%0Auid%3A%20FreeSql.DataAnnotations.ColumnAttribute.IsIdentity%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/DataAnnotations/ColumnAttribute.cs/#L32">View Source</a>
+  </span>
+  <a id="FreeSql_DataAnnotations_ColumnAttribute_IsIdentity_" data-uid="FreeSql.DataAnnotations.ColumnAttribute.IsIdentity*"></a>
+  <h4 id="FreeSql_DataAnnotations_ColumnAttribute_IsIdentity" data-uid="FreeSql.DataAnnotations.ColumnAttribute.IsIdentity">IsIdentity</h4>
+  <div class="markdown level1 summary"><p>自增标识</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsIdentity { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_DataAnnotations_ColumnAttribute_IsIgnore.md&amp;value=---%0Auid%3A%20FreeSql.DataAnnotations.ColumnAttribute.IsIgnore%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/DataAnnotations/ColumnAttribute.cs/#L40">View Source</a>
+  </span>
+  <a id="FreeSql_DataAnnotations_ColumnAttribute_IsIgnore_" data-uid="FreeSql.DataAnnotations.ColumnAttribute.IsIgnore*"></a>
+  <h4 id="FreeSql_DataAnnotations_ColumnAttribute_IsIgnore" data-uid="FreeSql.DataAnnotations.ColumnAttribute.IsIgnore">IsIgnore</h4>
+  <div class="markdown level1 summary"><p>忽略此列，不迁移、不插入</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsIgnore { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_DataAnnotations_ColumnAttribute_IsNullable.md&amp;value=---%0Auid%3A%20FreeSql.DataAnnotations.ColumnAttribute.IsNullable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/DataAnnotations/ColumnAttribute.cs/#L36">View Source</a>
+  </span>
+  <a id="FreeSql_DataAnnotations_ColumnAttribute_IsNullable_" data-uid="FreeSql.DataAnnotations.ColumnAttribute.IsNullable*"></a>
+  <h4 id="FreeSql_DataAnnotations_ColumnAttribute_IsNullable" data-uid="FreeSql.DataAnnotations.ColumnAttribute.IsNullable">IsNullable</h4>
+  <div class="markdown level1 summary"><p>是否可DBNull</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsNullable { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_DataAnnotations_ColumnAttribute_IsPrimary.md&amp;value=---%0Auid%3A%20FreeSql.DataAnnotations.ColumnAttribute.IsPrimary%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/DataAnnotations/ColumnAttribute.cs/#L28">View Source</a>
+  </span>
+  <a id="FreeSql_DataAnnotations_ColumnAttribute_IsPrimary_" data-uid="FreeSql.DataAnnotations.ColumnAttribute.IsPrimary*"></a>
+  <h4 id="FreeSql_DataAnnotations_ColumnAttribute_IsPrimary" data-uid="FreeSql.DataAnnotations.ColumnAttribute.IsPrimary">IsPrimary</h4>
+  <div class="markdown level1 summary"><p>主键</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsPrimary { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_DataAnnotations_ColumnAttribute_IsVersion.md&amp;value=---%0Auid%3A%20FreeSql.DataAnnotations.ColumnAttribute.IsVersion%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/DataAnnotations/ColumnAttribute.cs/#L44">View Source</a>
+  </span>
+  <a id="FreeSql_DataAnnotations_ColumnAttribute_IsVersion_" data-uid="FreeSql.DataAnnotations.ColumnAttribute.IsVersion*"></a>
+  <h4 id="FreeSql_DataAnnotations_ColumnAttribute_IsVersion" data-uid="FreeSql.DataAnnotations.ColumnAttribute.IsVersion">IsVersion</h4>
+  <div class="markdown level1 summary"><p>设置行锁（乐观锁）版本号，每次更新累加版本号，若更新整个实体时会附带当前的版本号判断（修改失败时抛出异常）</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsVersion { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_DataAnnotations_ColumnAttribute_MapType.md&amp;value=---%0Auid%3A%20FreeSql.DataAnnotations.ColumnAttribute.MapType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/DataAnnotations/ColumnAttribute.cs/#L51">View Source</a>
+  </span>
+  <a id="FreeSql_DataAnnotations_ColumnAttribute_MapType_" data-uid="FreeSql.DataAnnotations.ColumnAttribute.MapType*"></a>
+  <h4 id="FreeSql_DataAnnotations_ColumnAttribute_MapType" data-uid="FreeSql.DataAnnotations.ColumnAttribute.MapType">MapType</h4>
+  <div class="markdown level1 summary"><p>类型映射，除了可做基本的类型映射外，特别介绍的功能：<p>
+1、将 enum 属性映射成 typeof(string)<p>
+2、将 对象 属性映射成 typeof(string)，请安装扩展包 FreeSql.Extensions.JsonMap</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Type MapType { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_DataAnnotations_ColumnAttribute_Name.md&amp;value=---%0Auid%3A%20FreeSql.DataAnnotations.ColumnAttribute.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/DataAnnotations/ColumnAttribute.cs/#L13">View Source</a>
+  </span>
+  <a id="FreeSql_DataAnnotations_ColumnAttribute_Name_" data-uid="FreeSql.DataAnnotations.ColumnAttribute.Name*"></a>
+  <h4 id="FreeSql_DataAnnotations_ColumnAttribute_Name" data-uid="FreeSql.DataAnnotations.ColumnAttribute.Name">Name</h4>
+  <div class="markdown level1 summary"><p>数据库列名</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_DataAnnotations_ColumnAttribute_OldName.md&amp;value=---%0Auid%3A%20FreeSql.DataAnnotations.ColumnAttribute.OldName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/DataAnnotations/ColumnAttribute.cs/#L17">View Source</a>
+  </span>
+  <a id="FreeSql_DataAnnotations_ColumnAttribute_OldName_" data-uid="FreeSql.DataAnnotations.ColumnAttribute.OldName*"></a>
+  <h4 id="FreeSql_DataAnnotations_ColumnAttribute_OldName" data-uid="FreeSql.DataAnnotations.ColumnAttribute.OldName">OldName</h4>
+  <div class="markdown level1 summary"><p>指定数据库旧的列名，修改实体属性命名时，同时设置此参数为修改之前的值，CodeFirst才可以正确修改数据库字段；否则将视为【新增字段】</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string OldName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_DataAnnotations_ColumnAttribute_Position.md&amp;value=---%0Auid%3A%20FreeSql.DataAnnotations.ColumnAttribute.Position%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/DataAnnotations/ColumnAttribute.cs/#L63">View Source</a>
+  </span>
+  <a id="FreeSql_DataAnnotations_ColumnAttribute_Position_" data-uid="FreeSql.DataAnnotations.ColumnAttribute.Position*"></a>
+  <h4 id="FreeSql_DataAnnotations_ColumnAttribute_Position" data-uid="FreeSql.DataAnnotations.ColumnAttribute.Position">Position</h4>
+  <div class="markdown level1 summary"><p>创建表时字段的位置（场景：实体继承后设置字段顺序），规则如下：</p>
+<p>
+>0时排前面，1,2,3...
+<p>
+=0时排中间(默认)
+<p>
+&lt;0时排后面，...-3,-2,-1
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public short Position { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int16</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_DataAnnotations_ColumnAttribute_Precision.md&amp;value=---%0Auid%3A%20FreeSql.DataAnnotations.ColumnAttribute.Precision%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/DataAnnotations/ColumnAttribute.cs/#L112">View Source</a>
+  </span>
+  <a id="FreeSql_DataAnnotations_ColumnAttribute_Precision_" data-uid="FreeSql.DataAnnotations.ColumnAttribute.Precision*"></a>
+  <h4 id="FreeSql_DataAnnotations_ColumnAttribute_Precision" data-uid="FreeSql.DataAnnotations.ColumnAttribute.Precision">Precision</h4>
+  <div class="markdown level1 summary"><p>decimal/numeric 类型的长度</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Precision { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_DataAnnotations_ColumnAttribute_RereadSql.md&amp;value=---%0Auid%3A%20FreeSql.DataAnnotations.ColumnAttribute.RereadSql%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/DataAnnotations/ColumnAttribute.cs/#L131">View Source</a>
+  </span>
+  <a id="FreeSql_DataAnnotations_ColumnAttribute_RereadSql_" data-uid="FreeSql.DataAnnotations.ColumnAttribute.RereadSql*"></a>
+  <h4 id="FreeSql_DataAnnotations_ColumnAttribute_RereadSql" data-uid="FreeSql.DataAnnotations.ColumnAttribute.RereadSql">RereadSql</h4>
+  <div class="markdown level1 summary"><p>重读功能<p>
+比如：[Column(RereadSql = &quot;{0}.STAsText()&quot;)]<p>
+查询：SELECT a.[id], a.[geo].STAsText() FROM [table] a</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string RereadSql { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_DataAnnotations_ColumnAttribute_RewriteSql.md&amp;value=---%0Auid%3A%20FreeSql.DataAnnotations.ColumnAttribute.RewriteSql%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/DataAnnotations/ColumnAttribute.cs/#L125">View Source</a>
+  </span>
+  <a id="FreeSql_DataAnnotations_ColumnAttribute_RewriteSql_" data-uid="FreeSql.DataAnnotations.ColumnAttribute.RewriteSql*"></a>
+  <h4 id="FreeSql_DataAnnotations_ColumnAttribute_RewriteSql" data-uid="FreeSql.DataAnnotations.ColumnAttribute.RewriteSql">RewriteSql</h4>
+  <div class="markdown level1 summary"><p>重写功能<p>
+比如：[Column(RewriteSql = &quot;geography::STGeomFromText({0},4236)&quot;)]<p>
+插入：INSERT INTO <a href="%5Bgeo%5D">table</a> VALUES(geography::STGeomFromText('...',4236))<p>
+提示：更新也生效</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string RewriteSql { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_DataAnnotations_ColumnAttribute_Scale.md&amp;value=---%0Auid%3A%20FreeSql.DataAnnotations.ColumnAttribute.Scale%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/DataAnnotations/ColumnAttribute.cs/#L117">View Source</a>
+  </span>
+  <a id="FreeSql_DataAnnotations_ColumnAttribute_Scale_" data-uid="FreeSql.DataAnnotations.ColumnAttribute.Scale*"></a>
+  <h4 id="FreeSql_DataAnnotations_ColumnAttribute_Scale" data-uid="FreeSql.DataAnnotations.ColumnAttribute.Scale">Scale</h4>
+  <div class="markdown level1 summary"><p>decimal/numeric 类型的小数位长度</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Scale { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_DataAnnotations_ColumnAttribute_ServerTime.md&amp;value=---%0Auid%3A%20FreeSql.DataAnnotations.ColumnAttribute.ServerTime%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/DataAnnotations/ColumnAttribute.cs/#L78">View Source</a>
+  </span>
+  <a id="FreeSql_DataAnnotations_ColumnAttribute_ServerTime_" data-uid="FreeSql.DataAnnotations.ColumnAttribute.ServerTime*"></a>
+  <h4 id="FreeSql_DataAnnotations_ColumnAttribute_ServerTime" data-uid="FreeSql.DataAnnotations.ColumnAttribute.ServerTime">ServerTime</h4>
+  <div class="markdown level1 summary"><p>标记属性为数据库服务器时间(utc/local)，在插入的时候使用类似 getdate() 执行</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeKind ServerTime { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.DateTimeKind</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_DataAnnotations_ColumnAttribute_StringLength.md&amp;value=---%0Auid%3A%20FreeSql.DataAnnotations.ColumnAttribute.StringLength%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/DataAnnotations/ColumnAttribute.cs/#L100">View Source</a>
+  </span>
+  <a id="FreeSql_DataAnnotations_ColumnAttribute_StringLength_" data-uid="FreeSql.DataAnnotations.ColumnAttribute.StringLength*"></a>
+  <h4 id="FreeSql_DataAnnotations_ColumnAttribute_StringLength" data-uid="FreeSql.DataAnnotations.ColumnAttribute.StringLength">StringLength</h4>
+  <div class="markdown level1 summary"><p>设置长度，针对 string/byte[] 类型避免 DbType 的繁琐设置<p>
+提示：也可以使用 [MaxLength(100)]<p>
+---<p>
+StringLength = 100 时，对应 DbType：<p>
+MySql -&gt; varchar(100)<p>
+SqlServer -&gt; nvarchar(100)<p>
+PostgreSQL -&gt; varchar(100)<p>
+Oracle -&gt; nvarchar2(100)<p>
+Sqlite -&gt; nvarchar(100)<p>
+---<p>
+StringLength &lt; 0 时，对应 DbType：<p>
+MySql -&gt; text (StringLength = -2 时，对应 longtext)<p>
+SqlServer -&gt; nvarchar(max)<p>
+PostgreSQL -&gt; text<p>
+Oracle -&gt; nclob<p>
+Sqlite -&gt; text<p>
+v1.6.0+ byte[] 支持设置 StringLength</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int StringLength { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_DataAnnotations_ColumnAttribute.md&amp;value=---%0Auid%3A%20FreeSql.DataAnnotations.ColumnAttribute%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/dotnetcore/FreeSql/blob/master/FreeSql/DataAnnotations/ColumnAttribute.cs/#L6" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

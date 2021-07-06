@@ -1,0 +1,1282 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MsAccessUtils
+   | FreeSql API Docs </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MsAccessUtils
+   | FreeSql API Docs ">
+    <meta name="generator" content="docfx 2.58.0.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../.././images/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="FreeSql.MsAccess.MsAccessUtils">
+  
+  
+  <h1 id="FreeSql_MsAccess_MsAccessUtils" data-uid="FreeSql.MsAccess.MsAccessUtils" class="text-break">Class MsAccessUtils
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="../../api/FreeSql.Internal.CommonUtils.html">CommonUtils</a></div>
+    <div class="level2"><span class="xref">MsAccessUtils</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="../../api/FreeSql.Internal.CommonUtils.html#FreeSql_Internal_CommonUtils_GetSplitTableNames_System_String_System_Char_System_Char_System_Int32_">CommonUtils.GetSplitTableNames(String, Char, Char, Int32)</a>
+    </div>
+    <div>
+      <a class="xref" href="../../api/FreeSql.Internal.CommonUtils.html#FreeSql_Internal_CommonUtils_RewriteColumn_FreeSql_Internal_Model_ColumnInfo_System_String_">CommonUtils.RewriteColumn(ColumnInfo, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="../../api/FreeSql.Internal.CommonUtils.html#FreeSql_Internal_CommonUtils_RereadColumn_FreeSql_Internal_Model_ColumnInfo_System_String_">CommonUtils.RereadColumn(ColumnInfo, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="../../api/FreeSql.Internal.CommonUtils.html#FreeSql_Internal_CommonUtils_BytesSqlRaw_System_Byte___">CommonUtils.BytesSqlRaw(Byte[])</a>
+    </div>
+    <div>
+      <a class="xref" href="../../api/FreeSql.Internal.CommonUtils.html#FreeSql_Internal_CommonUtils__orm">CommonUtils._orm</a>
+    </div>
+    <div>
+      <a class="xref" href="../../api/FreeSql.Internal.CommonUtils.html#FreeSql_Internal_CommonUtils_CodeFirst">CommonUtils.CodeFirst</a>
+    </div>
+    <div>
+      <a class="xref" href="../../api/FreeSql.Internal.CommonUtils.html#FreeSql_Internal_CommonUtils_GetTableByEntity_System_Type_">CommonUtils.GetTableByEntity(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="../../api/FreeSql.Internal.CommonUtils.html#FreeSql_Internal_CommonUtils_dbTables">CommonUtils.dbTables</a>
+    </div>
+    <div>
+      <a class="xref" href="../../api/FreeSql.Internal.CommonUtils.html#FreeSql_Internal_CommonUtils_dbTablesLock">CommonUtils.dbTablesLock</a>
+    </div>
+    <div>
+      <a class="xref" href="../../api/FreeSql.Internal.CommonUtils.html#FreeSql_Internal_CommonUtils_ConfigEntity__1_System_Action_FreeSql_DataAnnotations_TableFluent___0___">CommonUtils.ConfigEntity&lt;T&gt;(Action&lt;TableFluent&lt;T&gt;&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="../../api/FreeSql.Internal.CommonUtils.html#FreeSql_Internal_CommonUtils_ConfigEntity_System_Type_System_Action_FreeSql_DataAnnotations_TableFluent__">CommonUtils.ConfigEntity(Type, Action&lt;TableFluent&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="../../api/FreeSql.Internal.CommonUtils.html#FreeSql_Internal_CommonUtils_GetConfigEntity_System_Type_">CommonUtils.GetConfigEntity(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="../../api/FreeSql.Internal.CommonUtils.html#FreeSql_Internal_CommonUtils_GetEntityTableAttribute_System_Type_">CommonUtils.GetEntityTableAttribute(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="../../api/FreeSql.Internal.CommonUtils.html#FreeSql_Internal_CommonUtils_GetEntityColumnAttribute_System_Type_System_Reflection_PropertyInfo_">CommonUtils.GetEntityColumnAttribute(Type, PropertyInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="../../api/FreeSql.Internal.CommonUtils.html#FreeSql_Internal_CommonUtils_GetEntityNavigateAttribute_System_Type_System_Reflection_PropertyInfo_">CommonUtils.GetEntityNavigateAttribute(Type, PropertyInfo)</a>
+    </div>
+    <div>
+      <a class="xref" href="../../api/FreeSql.Internal.CommonUtils.html#FreeSql_Internal_CommonUtils_GetEntityIndexAttribute_System_Type_">CommonUtils.GetEntityIndexAttribute(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="../../api/FreeSql.Internal.CommonUtils.html#FreeSql_Internal_CommonUtils_WhereObject_FreeSql_Internal_Model_TableInfo_System_String_System_Object_">CommonUtils.WhereObject(TableInfo, String, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="../../api/FreeSql.Internal.CommonUtils.html#FreeSql_Internal_CommonUtils_WhereItems__1_FreeSql_Internal_Model_ColumnInfo___System_String_System_Collections_Generic_IEnumerable___0__">CommonUtils.WhereItems&lt;TEntity&gt;(ColumnInfo[], String, IEnumerable&lt;TEntity&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="../../api/FreeSql.Internal.CommonUtils.html#FreeSql_Internal_CommonUtils_GetPropertyCommentByDescriptionAttribute_System_Type_">CommonUtils.GetPropertyCommentByDescriptionAttribute(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="../../api/FreeSql.Internal.CommonUtils.html#FreeSql_Internal_CommonUtils_GetProperyCommentBySummary_System_Type_">CommonUtils.GetProperyCommentBySummary(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="../../api/FreeSql.Internal.CommonUtils.html#FreeSql_Internal_CommonUtils_PrevReheatConnectionPool_FreeSql_Internal_ObjectPool_ObjectPool_System_Data_Common_DbConnection__System_Int32_">CommonUtils.PrevReheatConnectionPool(ObjectPool&lt;DbConnection&gt;, Int32)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="FreeSql.MsAccess.html">FreeSql.MsAccess</a></h6>
+  <h6><strong>Assembly</strong>: FreeSql.Provider.MsAccess.dll</h6>
+  <h5 id="FreeSql_MsAccess_MsAccessUtils_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MsAccessUtils : CommonUtils</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_MsAccess_MsAccessUtils__ctor_IFreeSql_.md&amp;value=---%0Auid%3A%20FreeSql.MsAccess.MsAccessUtils.%23ctor(IFreeSql)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/Providers/FreeSql.Provider.MsAccess/MsAccessUtils.cs/#L15">View Source</a>
+  </span>
+  <a id="FreeSql_MsAccess_MsAccessUtils__ctor_" data-uid="FreeSql.MsAccess.MsAccessUtils.#ctor*"></a>
+  <h4 id="FreeSql_MsAccess_MsAccessUtils__ctor_IFreeSql_" data-uid="FreeSql.MsAccess.MsAccessUtils.#ctor(IFreeSql)">MsAccessUtils(IFreeSql)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MsAccessUtils(IFreeSql orm)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IFreeSql</span></td>
+        <td><span class="parametername">orm</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_MsAccess_MsAccessUtils_Now.md&amp;value=---%0Auid%3A%20FreeSql.MsAccess.MsAccessUtils.Now%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/Providers/FreeSql.Provider.MsAccess/MsAccessUtils.cs/#L77">View Source</a>
+  </span>
+  <a id="FreeSql_MsAccess_MsAccessUtils_Now_" data-uid="FreeSql.MsAccess.MsAccessUtils.Now*"></a>
+  <h4 id="FreeSql_MsAccess_MsAccessUtils_Now" data-uid="FreeSql.MsAccess.MsAccessUtils.Now">Now</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Now { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="../../api/FreeSql.Internal.CommonUtils.html#FreeSql_Internal_CommonUtils_Now">CommonUtils.Now</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_MsAccess_MsAccessUtils_NowUtc.md&amp;value=---%0Auid%3A%20FreeSql.MsAccess.MsAccessUtils.NowUtc%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/Providers/FreeSql.Provider.MsAccess/MsAccessUtils.cs/#L78">View Source</a>
+  </span>
+  <a id="FreeSql_MsAccess_MsAccessUtils_NowUtc_" data-uid="FreeSql.MsAccess.MsAccessUtils.NowUtc*"></a>
+  <h4 id="FreeSql_MsAccess_MsAccessUtils_NowUtc" data-uid="FreeSql.MsAccess.MsAccessUtils.NowUtc">NowUtc</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string NowUtc { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="../../api/FreeSql.Internal.CommonUtils.html#FreeSql_Internal_CommonUtils_NowUtc">CommonUtils.NowUtc</a></div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_MsAccess_MsAccessUtils_AppendParamter_System_Collections_Generic_List_System_Data_Common_DbParameter__System_String_FreeSql_Internal_Model_ColumnInfo_System_Type_System_Object_.md&amp;value=---%0Auid%3A%20FreeSql.MsAccess.MsAccessUtils.AppendParamter(System.Collections.Generic.List%7BSystem.Data.Common.DbParameter%7D%2CSystem.String%2CFreeSql.Internal.Model.ColumnInfo%2CSystem.Type%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/Providers/FreeSql.Provider.MsAccess/MsAccessUtils.cs/#L19">View Source</a>
+  </span>
+  <a id="FreeSql_MsAccess_MsAccessUtils_AppendParamter_" data-uid="FreeSql.MsAccess.MsAccessUtils.AppendParamter*"></a>
+  <h4 id="FreeSql_MsAccess_MsAccessUtils_AppendParamter_System_Collections_Generic_List_System_Data_Common_DbParameter__System_String_FreeSql_Internal_Model_ColumnInfo_System_Type_System_Object_" data-uid="FreeSql.MsAccess.MsAccessUtils.AppendParamter(System.Collections.Generic.List{System.Data.Common.DbParameter},System.String,FreeSql.Internal.Model.ColumnInfo,System.Type,System.Object)">AppendParamter(List&lt;DbParameter&gt;, String, ColumnInfo, Type, Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override DbParameter AppendParamter(List&lt;DbParameter&gt; _params, string parameterName, ColumnInfo col, Type type, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Data.Common.DbParameter</span>&gt;</td>
+        <td><span class="parametername">_params</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">parameterName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../../api/FreeSql.Internal.Model.ColumnInfo.html">ColumnInfo</a></td>
+        <td><span class="parametername">col</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.Common.DbParameter</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="../../api/FreeSql.Internal.CommonUtils.html#FreeSql_Internal_CommonUtils_AppendParamter_System_Collections_Generic_List_System_Data_Common_DbParameter__System_String_FreeSql_Internal_Model_ColumnInfo_System_Type_System_Object_">CommonUtils.AppendParamter(List&lt;DbParameter&gt;, String, ColumnInfo, Type, Object)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_MsAccess_MsAccessUtils_Div_System_String_System_String_System_Type_System_Type_.md&amp;value=---%0Auid%3A%20FreeSql.MsAccess.MsAccessUtils.Div(System.String%2CSystem.String%2CSystem.Type%2CSystem.Type)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/Providers/FreeSql.Provider.MsAccess/MsAccessUtils.cs/#L76">View Source</a>
+  </span>
+  <a id="FreeSql_MsAccess_MsAccessUtils_Div_" data-uid="FreeSql.MsAccess.MsAccessUtils.Div*"></a>
+  <h4 id="FreeSql_MsAccess_MsAccessUtils_Div_System_String_System_String_System_Type_System_Type_" data-uid="FreeSql.MsAccess.MsAccessUtils.Div(System.String,System.String,System.Type,System.Type)">Div(String, String, Type, Type)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Div(string left, string right, Type leftType, Type rightType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">left</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">right</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">leftType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">rightType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="../../api/FreeSql.Internal.CommonUtils.html#FreeSql_Internal_CommonUtils_Div_System_String_System_String_System_Type_System_Type_">CommonUtils.Div(String, String, Type, Type)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_MsAccess_MsAccessUtils_FieldAsAlias_System_String_.md&amp;value=---%0Auid%3A%20FreeSql.MsAccess.MsAccessUtils.FieldAsAlias(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/Providers/FreeSql.Provider.MsAccess/MsAccessUtils.cs/#L82">View Source</a>
+  </span>
+  <a id="FreeSql_MsAccess_MsAccessUtils_FieldAsAlias_" data-uid="FreeSql.MsAccess.MsAccessUtils.FieldAsAlias*"></a>
+  <h4 id="FreeSql_MsAccess_MsAccessUtils_FieldAsAlias_System_String_" data-uid="FreeSql.MsAccess.MsAccessUtils.FieldAsAlias(System.String)">FieldAsAlias(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string FieldAsAlias(string alias)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">alias</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="../../api/FreeSql.Internal.CommonUtils.html#FreeSql_Internal_CommonUtils_FieldAsAlias_System_String_">CommonUtils.FieldAsAlias(String)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_MsAccess_MsAccessUtils_FormatSql_System_String_System_Object___.md&amp;value=---%0Auid%3A%20FreeSql.MsAccess.MsAccessUtils.FormatSql(System.String%2CSystem.Object%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/Providers/FreeSql.Provider.MsAccess/MsAccessUtils.cs/#L40">View Source</a>
+  </span>
+  <a id="FreeSql_MsAccess_MsAccessUtils_FormatSql_" data-uid="FreeSql.MsAccess.MsAccessUtils.FormatSql*"></a>
+  <h4 id="FreeSql_MsAccess_MsAccessUtils_FormatSql_System_String_System_Object___" data-uid="FreeSql.MsAccess.MsAccessUtils.FormatSql(System.String,System.Object[])">FormatSql(String, Object[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string FormatSql(string sql, params object[] args)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sql</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span>[]</td>
+        <td><span class="parametername">args</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="../../api/FreeSql.Internal.CommonUtils.html#FreeSql_Internal_CommonUtils_FormatSql_System_String_System_Object___">CommonUtils.FormatSql(String, Object[])</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_MsAccess_MsAccessUtils_GetCastSql_System_String_System_Type_.md&amp;value=---%0Auid%3A%20FreeSql.MsAccess.MsAccessUtils.GetCastSql(System.String%2CSystem.Type)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/Providers/FreeSql.Provider.MsAccess/MsAccessUtils.cs/#L98">View Source</a>
+  </span>
+  <a id="FreeSql_MsAccess_MsAccessUtils_GetCastSql_" data-uid="FreeSql.MsAccess.MsAccessUtils.GetCastSql*"></a>
+  <h4 id="FreeSql_MsAccess_MsAccessUtils_GetCastSql_System_String_System_Type_" data-uid="FreeSql.MsAccess.MsAccessUtils.GetCastSql(System.String,System.Type)">GetCastSql(String, Type)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetCastSql(string sqlExp, Type toType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sqlExp</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">toType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_MsAccess_MsAccessUtils_GetDbParamtersByObject_System_String_System_Object_.md&amp;value=---%0Auid%3A%20FreeSql.MsAccess.MsAccessUtils.GetDbParamtersByObject(System.String%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/Providers/FreeSql.Provider.MsAccess/MsAccessUtils.cs/#L30">View Source</a>
+  </span>
+  <a id="FreeSql_MsAccess_MsAccessUtils_GetDbParamtersByObject_" data-uid="FreeSql.MsAccess.MsAccessUtils.GetDbParamtersByObject*"></a>
+  <h4 id="FreeSql_MsAccess_MsAccessUtils_GetDbParamtersByObject_System_String_System_Object_" data-uid="FreeSql.MsAccess.MsAccessUtils.GetDbParamtersByObject(System.String,System.Object)">GetDbParamtersByObject(String, Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override DbParameter[] GetDbParamtersByObject(string sql, object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sql</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Data.Common.DbParameter</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="../../api/FreeSql.Internal.CommonUtils.html#FreeSql_Internal_CommonUtils_GetDbParamtersByObject_System_String_System_Object_">CommonUtils.GetDbParamtersByObject(String, Object)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_MsAccess_MsAccessUtils_GetNoneParamaterSqlValue_System_Collections_Generic_List_System_Data_Common_DbParameter__System_String_FreeSql_Internal_Model_ColumnInfo_System_Type_System_Object_.md&amp;value=---%0Auid%3A%20FreeSql.MsAccess.MsAccessUtils.GetNoneParamaterSqlValue(System.Collections.Generic.List%7BSystem.Data.Common.DbParameter%7D%2CSystem.String%2CFreeSql.Internal.Model.ColumnInfo%2CSystem.Type%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/Providers/FreeSql.Provider.MsAccess/MsAccessUtils.cs/#L85">View Source</a>
+  </span>
+  <a id="FreeSql_MsAccess_MsAccessUtils_GetNoneParamaterSqlValue_" data-uid="FreeSql.MsAccess.MsAccessUtils.GetNoneParamaterSqlValue*"></a>
+  <h4 id="FreeSql_MsAccess_MsAccessUtils_GetNoneParamaterSqlValue_System_Collections_Generic_List_System_Data_Common_DbParameter__System_String_FreeSql_Internal_Model_ColumnInfo_System_Type_System_Object_" data-uid="FreeSql.MsAccess.MsAccessUtils.GetNoneParamaterSqlValue(System.Collections.Generic.List{System.Data.Common.DbParameter},System.String,FreeSql.Internal.Model.ColumnInfo,System.Type,System.Object)">GetNoneParamaterSqlValue(List&lt;DbParameter&gt;, String, ColumnInfo, Type, Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string GetNoneParamaterSqlValue(List&lt;DbParameter&gt; specialParams, string specialParamFlag, ColumnInfo col, Type type, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List</span>&lt;<span class="xref">System.Data.Common.DbParameter</span>&gt;</td>
+        <td><span class="parametername">specialParams</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">specialParamFlag</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../../api/FreeSql.Internal.Model.ColumnInfo.html">ColumnInfo</a></td>
+        <td><span class="parametername">col</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="../../api/FreeSql.Internal.CommonUtils.html#FreeSql_Internal_CommonUtils_GetNoneParamaterSqlValue_System_Collections_Generic_List_System_Data_Common_DbParameter__System_String_FreeSql_Internal_Model_ColumnInfo_System_Type_System_Object_">CommonUtils.GetNoneParamaterSqlValue(List&lt;DbParameter&gt;, String, ColumnInfo, Type, Object)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_MsAccess_MsAccessUtils_IIF_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20FreeSql.MsAccess.MsAccessUtils.IIF(System.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/Providers/FreeSql.Provider.MsAccess/MsAccessUtils.cs/#L83">View Source</a>
+  </span>
+  <a id="FreeSql_MsAccess_MsAccessUtils_IIF_" data-uid="FreeSql.MsAccess.MsAccessUtils.IIF*"></a>
+  <h4 id="FreeSql_MsAccess_MsAccessUtils_IIF_System_String_System_String_System_String_" data-uid="FreeSql.MsAccess.MsAccessUtils.IIF(System.String,System.String,System.String)">IIF(String, String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string IIF(string test, string ifTrue, string ifElse)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">test</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">ifTrue</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">ifElse</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="../../api/FreeSql.Internal.CommonUtils.html#FreeSql_Internal_CommonUtils_IIF_System_String_System_String_System_String_">CommonUtils.IIF(String, String, String)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_MsAccess_MsAccessUtils_IsNull_System_String_System_Object_.md&amp;value=---%0Auid%3A%20FreeSql.MsAccess.MsAccessUtils.IsNull(System.String%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/Providers/FreeSql.Provider.MsAccess/MsAccessUtils.cs/#L63">View Source</a>
+  </span>
+  <a id="FreeSql_MsAccess_MsAccessUtils_IsNull_" data-uid="FreeSql.MsAccess.MsAccessUtils.IsNull*"></a>
+  <h4 id="FreeSql_MsAccess_MsAccessUtils_IsNull_System_String_System_Object_" data-uid="FreeSql.MsAccess.MsAccessUtils.IsNull(System.String,System.Object)">IsNull(String, Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string IsNull(string sql, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sql</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="../../api/FreeSql.Internal.CommonUtils.html#FreeSql_Internal_CommonUtils_IsNull_System_String_System_Object_">CommonUtils.IsNull(String, Object)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_MsAccess_MsAccessUtils_Mod_System_String_System_String_System_Type_System_Type_.md&amp;value=---%0Auid%3A%20FreeSql.MsAccess.MsAccessUtils.Mod(System.String%2CSystem.String%2CSystem.Type%2CSystem.Type)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/Providers/FreeSql.Provider.MsAccess/MsAccessUtils.cs/#L75">View Source</a>
+  </span>
+  <a id="FreeSql_MsAccess_MsAccessUtils_Mod_" data-uid="FreeSql.MsAccess.MsAccessUtils.Mod*"></a>
+  <h4 id="FreeSql_MsAccess_MsAccessUtils_Mod_System_String_System_String_System_Type_System_Type_" data-uid="FreeSql.MsAccess.MsAccessUtils.Mod(System.String,System.String,System.Type,System.Type)">Mod(String, String, Type, Type)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Mod(string left, string right, Type leftType, Type rightType)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">left</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">right</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">leftType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">rightType</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="../../api/FreeSql.Internal.CommonUtils.html#FreeSql_Internal_CommonUtils_Mod_System_String_System_String_System_Type_System_Type_">CommonUtils.Mod(String, String, Type, Type)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_MsAccess_MsAccessUtils_QuoteParamterName_System_String_.md&amp;value=---%0Auid%3A%20FreeSql.MsAccess.MsAccessUtils.QuoteParamterName(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/Providers/FreeSql.Provider.MsAccess/MsAccessUtils.cs/#L62">View Source</a>
+  </span>
+  <a id="FreeSql_MsAccess_MsAccessUtils_QuoteParamterName_" data-uid="FreeSql.MsAccess.MsAccessUtils.QuoteParamterName*"></a>
+  <h4 id="FreeSql_MsAccess_MsAccessUtils_QuoteParamterName_System_String_" data-uid="FreeSql.MsAccess.MsAccessUtils.QuoteParamterName(System.String)">QuoteParamterName(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string QuoteParamterName(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="../../api/FreeSql.Internal.CommonUtils.html#FreeSql_Internal_CommonUtils_QuoteParamterName_System_String_">CommonUtils.QuoteParamterName(String)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_MsAccess_MsAccessUtils_QuoteReadColumnAdapter_System_Type_System_Type_System_String_.md&amp;value=---%0Auid%3A%20FreeSql.MsAccess.MsAccessUtils.QuoteReadColumnAdapter(System.Type%2CSystem.Type%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/Providers/FreeSql.Provider.MsAccess/MsAccessUtils.cs/#L81">View Source</a>
+  </span>
+  <a id="FreeSql_MsAccess_MsAccessUtils_QuoteReadColumnAdapter_" data-uid="FreeSql.MsAccess.MsAccessUtils.QuoteReadColumnAdapter*"></a>
+  <h4 id="FreeSql_MsAccess_MsAccessUtils_QuoteReadColumnAdapter_System_Type_System_Type_System_String_" data-uid="FreeSql.MsAccess.MsAccessUtils.QuoteReadColumnAdapter(System.Type,System.Type,System.String)">QuoteReadColumnAdapter(Type, Type, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override string QuoteReadColumnAdapter(Type type, Type mapType, string columnName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">mapType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">columnName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="../../api/FreeSql.Internal.CommonUtils.html#FreeSql_Internal_CommonUtils_QuoteReadColumnAdapter_System_Type_System_Type_System_String_">CommonUtils.QuoteReadColumnAdapter(Type, Type, String)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_MsAccess_MsAccessUtils_QuoteSqlName_System_String___.md&amp;value=---%0Auid%3A%20FreeSql.MsAccess.MsAccessUtils.QuoteSqlName(System.String%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/Providers/FreeSql.Provider.MsAccess/MsAccessUtils.cs/#L41">View Source</a>
+  </span>
+  <a id="FreeSql_MsAccess_MsAccessUtils_QuoteSqlName_" data-uid="FreeSql.MsAccess.MsAccessUtils.QuoteSqlName*"></a>
+  <h4 id="FreeSql_MsAccess_MsAccessUtils_QuoteSqlName_System_String___" data-uid="FreeSql.MsAccess.MsAccessUtils.QuoteSqlName(System.String[])">QuoteSqlName(String[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string QuoteSqlName(params string[] name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="../../api/FreeSql.Internal.CommonUtils.html#FreeSql_Internal_CommonUtils_QuoteSqlName_System_String___">CommonUtils.QuoteSqlName(String[])</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_MsAccess_MsAccessUtils_QuoteWriteParamterAdapter_System_Type_System_String_.md&amp;value=---%0Auid%3A%20FreeSql.MsAccess.MsAccessUtils.QuoteWriteParamterAdapter(System.Type%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/Providers/FreeSql.Provider.MsAccess/MsAccessUtils.cs/#L80">View Source</a>
+  </span>
+  <a id="FreeSql_MsAccess_MsAccessUtils_QuoteWriteParamterAdapter_" data-uid="FreeSql.MsAccess.MsAccessUtils.QuoteWriteParamterAdapter*"></a>
+  <h4 id="FreeSql_MsAccess_MsAccessUtils_QuoteWriteParamterAdapter_System_Type_System_String_" data-uid="FreeSql.MsAccess.MsAccessUtils.QuoteWriteParamterAdapter(System.Type,System.String)">QuoteWriteParamterAdapter(Type, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string QuoteWriteParamterAdapter(Type type, string paramterName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Type</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">paramterName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="../../api/FreeSql.Internal.CommonUtils.html#FreeSql_Internal_CommonUtils_QuoteWriteParamterAdapter_System_Type_System_String_">CommonUtils.QuoteWriteParamterAdapter(Type, String)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_MsAccess_MsAccessUtils_SplitTableName_System_String_.md&amp;value=---%0Auid%3A%20FreeSql.MsAccess.MsAccessUtils.SplitTableName(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/Providers/FreeSql.Provider.MsAccess/MsAccessUtils.cs/#L61">View Source</a>
+  </span>
+  <a id="FreeSql_MsAccess_MsAccessUtils_SplitTableName_" data-uid="FreeSql.MsAccess.MsAccessUtils.SplitTableName*"></a>
+  <h4 id="FreeSql_MsAccess_MsAccessUtils_SplitTableName_System_String_" data-uid="FreeSql.MsAccess.MsAccessUtils.SplitTableName(System.String)">SplitTableName(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string[] SplitTableName(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="../../api/FreeSql.Internal.CommonUtils.html#FreeSql_Internal_CommonUtils_SplitTableName_System_String_">CommonUtils.SplitTableName(String)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_MsAccess_MsAccessUtils_StringConcat_System_String___System_Type___.md&amp;value=---%0Auid%3A%20FreeSql.MsAccess.MsAccessUtils.StringConcat(System.String%5B%5D%2CSystem.Type%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/Providers/FreeSql.Provider.MsAccess/MsAccessUtils.cs/#L64">View Source</a>
+  </span>
+  <a id="FreeSql_MsAccess_MsAccessUtils_StringConcat_" data-uid="FreeSql.MsAccess.MsAccessUtils.StringConcat*"></a>
+  <h4 id="FreeSql_MsAccess_MsAccessUtils_StringConcat_System_String___System_Type___" data-uid="FreeSql.MsAccess.MsAccessUtils.StringConcat(System.String[],System.Type[])">StringConcat(String[], Type[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string StringConcat(string[] objs, Type[] types)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span>[]</td>
+        <td><span class="parametername">objs</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Type</span>[]</td>
+        <td><span class="parametername">types</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="../../api/FreeSql.Internal.CommonUtils.html#FreeSql_Internal_CommonUtils_StringConcat_System_String___System_Type___">CommonUtils.StringConcat(String[], Type[])</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_MsAccess_MsAccessUtils_TrimQuoteSqlName_System_String_.md&amp;value=---%0Auid%3A%20FreeSql.MsAccess.MsAccessUtils.TrimQuoteSqlName(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dotnetcore/FreeSql/blob/master/Providers/FreeSql.Provider.MsAccess/MsAccessUtils.cs/#L54">View Source</a>
+  </span>
+  <a id="FreeSql_MsAccess_MsAccessUtils_TrimQuoteSqlName_" data-uid="FreeSql.MsAccess.MsAccessUtils.TrimQuoteSqlName*"></a>
+  <h4 id="FreeSql_MsAccess_MsAccessUtils_TrimQuoteSqlName_System_String_" data-uid="FreeSql.MsAccess.MsAccessUtils.TrimQuoteSqlName(System.String)">TrimQuoteSqlName(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string TrimQuoteSqlName(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="../../api/FreeSql.Internal.CommonUtils.html#FreeSql_Internal_CommonUtils_TrimQuoteSqlName_System_String_">CommonUtils.TrimQuoteSqlName(String)</a></div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/dotnetcore/freesql/new/master/apiSpec/new?filename=FreeSql_MsAccess_MsAccessUtils.md&amp;value=---%0Auid%3A%20FreeSql.MsAccess.MsAccessUtils%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/dotnetcore/FreeSql/blob/master/Providers/FreeSql.Provider.MsAccess/MsAccessUtils.cs/#L13" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>
